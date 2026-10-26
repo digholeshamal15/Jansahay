@@ -1,0 +1,18 @@
+Assignment 1: mapped feature, method, scope and specific output displayed.
+Assignment 2: mapped feature, method, scope and specific output displayed.
+Assignment 3: mapped feature, method, scope and specific output displayed.
+Assignment 4: mapped feature, method, scope and specific output displayed.
+Assignment 5: mapped feature, method, scope and specific output displayed.
+Assignment 6: mapped feature, method, scope and specific output displayed.
+Assignment 7: mapped feature, method, scope and specific output displayed.
+Assignment 8: mapped feature, method, scope and specific output displayed.
+Assignment 9: mapped feature, method, scope and specific output displayed.
+Assignment 10: mapped feature, method, scope and specific output displayed.
+Assignment 11: mapped feature, method, scope and specific output displayed.
+Assignment 2: actual 1,331-message civic corpus analyzed.
+Hindi/Marathi interface, Unicode results and input/analysis-language retention passed.
+Raw JSON copy and original full inspector/topic outputs passed.
+Assignments desktop: no automated A/AA violations or page overflow.
+Assignments Marathi mobile: no automated A/AA violations or page overflow.
+Keyboard selection, original complaint retention and no demo writes passed.
+Assignment browser checks passed.

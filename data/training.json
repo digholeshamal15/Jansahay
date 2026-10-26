@@ -1,0 +1,452 @@
+[
+  {
+    "text": "There is no water supply in our building",
+    "category": "water",
+    "lang": "en"
+  },
+  {
+    "text": "The drinking water is dirty and smells bad",
+    "category": "water",
+    "lang": "en"
+  },
+  {
+    "text": "A water pipe is leaking near my house",
+    "category": "water",
+    "lang": "en"
+  },
+  {
+    "text": "Water pressure is very low every morning",
+    "category": "water",
+    "lang": "en"
+  },
+  {
+    "text": "The public tap is broken",
+    "category": "water",
+    "lang": "en"
+  },
+  {
+    "text": "Our area has not received water for two days",
+    "category": "water",
+    "lang": "en"
+  },
+  {
+    "text": "हमारे घर में पानी नहीं आ रहा है",
+    "category": "water",
+    "lang": "hi"
+  },
+  {
+    "text": "पीने का पानी गंदा है और बदबू आती है",
+    "category": "water",
+    "lang": "hi"
+  },
+  {
+    "text": "सड़क पर पानी की पाइप लीक हो रही है",
+    "category": "water",
+    "lang": "hi"
+  },
+  {
+    "text": "सुबह पानी का दबाव बहुत कम है",
+    "category": "water",
+    "lang": "hi"
+  },
+  {
+    "text": "सार्वजनिक नल टूट गया है",
+    "category": "water",
+    "lang": "hi"
+  },
+  {
+    "text": "हमारे मोहल्ले में दो दिन से पानी नहीं आया",
+    "category": "water",
+    "lang": "hi"
+  },
+  {
+    "text": "आमच्या घरी पाणी येत नाही",
+    "category": "water",
+    "lang": "mr"
+  },
+  {
+    "text": "पिण्याचे पाणी घाण आहे आणि वास येतो",
+    "category": "water",
+    "lang": "mr"
+  },
+  {
+    "text": "रस्त्यावर पाण्याची पाइप फुटली आहे",
+    "category": "water",
+    "lang": "mr"
+  },
+  {
+    "text": "सकाळी पाण्याचा दाब खूप कमी असतो",
+    "category": "water",
+    "lang": "mr"
+  },
+  {
+    "text": "सार्वजनिक नळ तुटला आहे",
+    "category": "water",
+    "lang": "mr"
+  },
+  {
+    "text": "आमच्या भागात दोन दिवस पाणी आले नाही",
+    "category": "water",
+    "lang": "mr"
+  },
+  {
+    "text": "Garbage has not been collected from our street",
+    "category": "garbage",
+    "lang": "en"
+  },
+  {
+    "text": "There is a pile of waste near the bus stop",
+    "category": "garbage",
+    "lang": "en"
+  },
+  {
+    "text": "The dustbin is overflowing and smells bad",
+    "category": "garbage",
+    "lang": "en"
+  },
+  {
+    "text": "Please arrange regular garbage collection",
+    "category": "garbage",
+    "lang": "en"
+  },
+  {
+    "text": "People are dumping rubbish near the market",
+    "category": "garbage",
+    "lang": "en"
+  },
+  {
+    "text": "The garbage truck has not visited our lane",
+    "category": "garbage",
+    "lang": "en"
+  },
+  {
+    "text": "हमारी गली से कचरा नहीं उठाया गया",
+    "category": "garbage",
+    "lang": "hi"
+  },
+  {
+    "text": "बस स्टॉप के पास कूड़े का ढेर है",
+    "category": "garbage",
+    "lang": "hi"
+  },
+  {
+    "text": "कूड़ेदान भर गया है और बदबू आ रही है",
+    "category": "garbage",
+    "lang": "hi"
+  },
+  {
+    "text": "कृपया रोज कचरा उठाने की व्यवस्था करें",
+    "category": "garbage",
+    "lang": "hi"
+  },
+  {
+    "text": "बाजार के पास लोग कूड़ा फेंक रहे हैं",
+    "category": "garbage",
+    "lang": "hi"
+  },
+  {
+    "text": "कचरे की गाड़ी हमारी गली में नहीं आई",
+    "category": "garbage",
+    "lang": "hi"
+  },
+  {
+    "text": "आमच्या गल्लीतला कचरा उचलला नाही",
+    "category": "garbage",
+    "lang": "mr"
+  },
+  {
+    "text": "बस थांब्याजवळ कचऱ्याचा ढीग आहे",
+    "category": "garbage",
+    "lang": "mr"
+  },
+  {
+    "text": "कचरापेटी भरली आहे आणि वास येतो",
+    "category": "garbage",
+    "lang": "mr"
+  },
+  {
+    "text": "कृपया नियमित कचरा उचलण्याची व्यवस्था करा",
+    "category": "garbage",
+    "lang": "mr"
+  },
+  {
+    "text": "बाजाराजवळ लोक कचरा टाकत आहेत",
+    "category": "garbage",
+    "lang": "mr"
+  },
+  {
+    "text": "कचरा गाडी आमच्या गल्लीत आली नाही",
+    "category": "garbage",
+    "lang": "mr"
+  },
+  {
+    "text": "There are large potholes on the road",
+    "category": "roads",
+    "lang": "en"
+  },
+  {
+    "text": "The road surface is broken near the school",
+    "category": "roads",
+    "lang": "en"
+  },
+  {
+    "text": "Please repair the damaged footpath",
+    "category": "roads",
+    "lang": "en"
+  },
+  {
+    "text": "Loose paving stones make walking difficult",
+    "category": "roads",
+    "lang": "en"
+  },
+  {
+    "text": "A large hole in the street needs repair",
+    "category": "roads",
+    "lang": "en"
+  },
+  {
+    "text": "The pavement is damaged outside our building",
+    "category": "roads",
+    "lang": "en"
+  },
+  {
+    "text": "सड़क पर बड़े गड्ढे हैं",
+    "category": "roads",
+    "lang": "hi"
+  },
+  {
+    "text": "स्कूल के पास सड़क टूट गई है",
+    "category": "roads",
+    "lang": "hi"
+  },
+  {
+    "text": "कृपया टूटे हुए फुटपाथ की मरम्मत करें",
+    "category": "roads",
+    "lang": "hi"
+  },
+  {
+    "text": "फुटपाथ के पत्थर उखड़ गए हैं",
+    "category": "roads",
+    "lang": "hi"
+  },
+  {
+    "text": "गली में बड़ा गड्ढा है इसे ठीक करें",
+    "category": "roads",
+    "lang": "hi"
+  },
+  {
+    "text": "हमारी इमारत के बाहर फुटपाथ खराब है",
+    "category": "roads",
+    "lang": "hi"
+  },
+  {
+    "text": "रस्त्यावर मोठे खड्डे आहेत",
+    "category": "roads",
+    "lang": "mr"
+  },
+  {
+    "text": "शाळेजवळचा रस्ता खराब झाला आहे",
+    "category": "roads",
+    "lang": "mr"
+  },
+  {
+    "text": "कृपया तुटलेला पदपथ दुरुस्त करा",
+    "category": "roads",
+    "lang": "mr"
+  },
+  {
+    "text": "पदपथाचे दगड निखळले आहेत",
+    "category": "roads",
+    "lang": "mr"
+  },
+  {
+    "text": "गल्लीत मोठा खड्डा पडला आहे",
+    "category": "roads",
+    "lang": "mr"
+  },
+  {
+    "text": "आमच्या इमारतीसमोरचा पदपथ खराब आहे",
+    "category": "roads",
+    "lang": "mr"
+  },
+  {
+    "text": "The streetlight outside my house is not working",
+    "category": "lights",
+    "lang": "en"
+  },
+  {
+    "text": "Our lane is dark because the street lamp is broken",
+    "category": "lights",
+    "lang": "en"
+  },
+  {
+    "text": "Please repair the flickering public streetlight",
+    "category": "lights",
+    "lang": "en"
+  },
+  {
+    "text": "Three street lights are off near the park",
+    "category": "lights",
+    "lang": "en"
+  },
+  {
+    "text": "The road lamp has been off for a week",
+    "category": "lights",
+    "lang": "en"
+  },
+  {
+    "text": "A streetlight pole needs maintenance",
+    "category": "lights",
+    "lang": "en"
+  },
+  {
+    "text": "मेरे घर के बाहर स्ट्रीट लाइट बंद है",
+    "category": "lights",
+    "lang": "hi"
+  },
+  {
+    "text": "गली की बत्ती खराब होने से अंधेरा है",
+    "category": "lights",
+    "lang": "hi"
+  },
+  {
+    "text": "सड़क की टिमटिमाती लाइट ठीक करें",
+    "category": "lights",
+    "lang": "hi"
+  },
+  {
+    "text": "पार्क के पास तीन स्ट्रीट लाइट बंद हैं",
+    "category": "lights",
+    "lang": "hi"
+  },
+  {
+    "text": "सड़क की बत्ती एक हफ्ते से बंद है",
+    "category": "lights",
+    "lang": "hi"
+  },
+  {
+    "text": "स्ट्रीट लाइट के खंभे की मरम्मत चाहिए",
+    "category": "lights",
+    "lang": "hi"
+  },
+  {
+    "text": "माझ्या घराबाहेरचा पथदिवा बंद आहे",
+    "category": "lights",
+    "lang": "mr"
+  },
+  {
+    "text": "गल्लीतला दिवा खराब असल्याने अंधार आहे",
+    "category": "lights",
+    "lang": "mr"
+  },
+  {
+    "text": "रस्त्यावरचा लुकलुकणारा दिवा दुरुस्त करा",
+    "category": "lights",
+    "lang": "mr"
+  },
+  {
+    "text": "उद्यानाजवळ तीन पथदिवे बंद आहेत",
+    "category": "lights",
+    "lang": "mr"
+  },
+  {
+    "text": "रस्त्यावरील दिवा एक आठवडा बंद आहे",
+    "category": "lights",
+    "lang": "mr"
+  },
+  {
+    "text": "पथदिव्याच्या खांबाची दुरुस्ती हवी आहे",
+    "category": "lights",
+    "lang": "mr"
+  },
+  {
+    "text": "The drain is blocked and sewage is overflowing",
+    "category": "drainage",
+    "lang": "en"
+  },
+  {
+    "text": "Dirty sewage water is entering our lane",
+    "category": "drainage",
+    "lang": "en"
+  },
+  {
+    "text": "Please clean the blocked gutter",
+    "category": "drainage",
+    "lang": "en"
+  },
+  {
+    "text": "The manhole cover is missing",
+    "category": "drainage",
+    "lang": "en"
+  },
+  {
+    "text": "Wastewater is overflowing from the drain",
+    "category": "drainage",
+    "lang": "en"
+  },
+  {
+    "text": "The sewer line is blocked near the market",
+    "category": "drainage",
+    "lang": "en"
+  },
+  {
+    "text": "नाली बंद है और गंदा पानी बह रहा है",
+    "category": "drainage",
+    "lang": "hi"
+  },
+  {
+    "text": "सीवर का पानी हमारी गली में आ रहा है",
+    "category": "drainage",
+    "lang": "hi"
+  },
+  {
+    "text": "कृपया बंद नाली साफ करें",
+    "category": "drainage",
+    "lang": "hi"
+  },
+  {
+    "text": "मैनहोल का ढक्कन गायब है",
+    "category": "drainage",
+    "lang": "hi"
+  },
+  {
+    "text": "नाले से गंदा पानी बाहर आ रहा है",
+    "category": "drainage",
+    "lang": "hi"
+  },
+  {
+    "text": "बाजार के पास सीवर लाइन जाम है",
+    "category": "drainage",
+    "lang": "hi"
+  },
+  {
+    "text": "गटार तुंबले आहे आणि सांडपाणी वाहत आहे",
+    "category": "drainage",
+    "lang": "mr"
+  },
+  {
+    "text": "आमच्या गल्लीत सांडपाणी येत आहे",
+    "category": "drainage",
+    "lang": "mr"
+  },
+  {
+    "text": "कृपया तुंबलेली नाली साफ करा",
+    "category": "drainage",
+    "lang": "mr"
+  },
+  {
+    "text": "मॅनहोलचे झाकण गायब आहे",
+    "category": "drainage",
+    "lang": "mr"
+  },
+  {
+    "text": "नाल्यातून घाण पाणी बाहेर येत आहे",
+    "category": "drainage",
+    "lang": "mr"
+  },
+  {
+    "text": "बाजाराजवळ गटाराची लाइन तुंबली आहे",
+    "category": "drainage",
+    "lang": "mr"
+  }
+]

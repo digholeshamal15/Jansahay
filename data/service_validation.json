@@ -1,0 +1,1433 @@
+[
+  {
+    "text": "I request assistance from the concerned office for water is reaching the street only on alternate days in Dharampeth, Nagpur, Maharashtra. Several households have had to make repeated visits to seek help. Despite contacting the help desk through Telephone helpline earlier this month, I do not know when the matter will be addressed. Please note that this has remained unresolved for one week. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "229",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "At Mansarovar, Jaipur, Rajasthan, the road surface is broken across the lane. I made an earlier request through Written submission three days ago and would appreciate a response on its status. The matter has continued for ten days. The delay is affecting routine access to a public service. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "400",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Please review an unresolved public-service issue involving the completed public work needs an inspection for visible defects in Mansarovar, Jaipur, Rajasthan. A clear update would help affected residents plan their next steps. I previously contacted the office through Web portal earlier this month, but have not received a clear update. Please note that this has remained unresolved for one week. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "473",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "I am submitting this grievance about water is collecting around a damaged supply line in Sanjauli, Shimla, Himachal Pradesh. The delay is affecting routine access to a public service. I previously contacted the office through Email about ten days ago, but have not received a clear update. Please note that this has remained unresolved for four days. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "553",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0240"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. The issue is creating difficulty for residents who rely on timely service. I first sought help yesterday through Written submission, but the matter is still open. It has continued for ten days. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "576",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Please review an unresolved public-service issue involving water is collecting around a damaged supply line in Harmu, Ranchi, Jharkhand. A clear update would help affected residents plan their next steps. I previously contacted the office through Email about ten days ago, but have not received a clear update. Please note that this has remained unresolved for four days. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "599",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0240"
+  },
+  {
+    "text": "Kindly look into water is reaching the street only on alternate days in Adajan, Surat, Gujarat. A clear update would help affected residents plan their next steps. Despite contacting the help desk through Email two weeks ago, I do not know when the matter will be addressed. Please note that this has remained unresolved for four days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "659",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I am submitting this grievance about the road surface is broken across the lane in Nazarbad, Mysuru, Karnataka. The issue is creating difficulty for residents who rely on timely service. Despite contacting the help desk through Written submission yesterday, I do not know when the matter will be addressed. Please note that this has remained unresolved for three weeks. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "792",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "At Hadapsar, Pune, Maharashtra, the roadside drain is blocked with accumulated silt. I previously contacted the office through Written submission last week, but have not received a clear update. The matter has continued for one month. Several households have had to make repeated visits to seek help. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "845",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0525"
+  },
+  {
+    "text": "I am seeking a status update regarding pothole or damaged road at Raipur Road, Dehradun, Uttarakhand. The road surface is broken across the lane. Despite contacting the help desk through Web portal yesterday, I do not know when the matter will be addressed. This has disrupted essential work for residents in the area. The issue has continued for one month. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "857",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Please review an unresolved public-service issue involving sewage overflow at Rohini, New Delhi, Delhi. Sewage is flowing onto the public lane from a damaged chamber. Despite contacting the help desk through Email earlier this month, I do not know when the matter will be addressed. The delay is affecting routine access to a public service. The issue has continued for four days. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1018",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. A clear update would help affected residents plan their next steps. I first sought help two weeks ago through Written submission, but the matter is still open. It has continued for four days. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1154",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "The road surface is broken across the lane. People who depend on this service are facing avoidable inconvenience. I first sought help last week through Telephone helpline, but the matter is still open. It has continued for six weeks. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1208",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "At Sardarpura, Jodhpur, Rajasthan, water is reaching the street only on alternate days. I previously contacted the office through Written submission about ten days ago, but have not received a clear update. The matter has continued for three weeks. This has disrupted essential work for residents in the area. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1283",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0243"
+  },
+  {
+    "text": "The road surface is broken across the lane. The delay is affecting routine access to a public service. I first sought help two weeks ago through Web portal, but the matter is still open. It has continued for two days. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1438",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Please review an unresolved public-service issue involving water is reaching the street only on alternate days in Kukatpally, Hyderabad, Telangana. This has disrupted essential work for residents in the area. The matter was raised through Written submission about ten days ago; the service issue is still unresolved. Please note that this has remained unresolved for three weeks. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1565",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I am submitting this grievance about sewage is flowing onto the public lane from a damaged chamber in Panchavati, Nashik, Maharashtra. A clear update would help affected residents plan their next steps. I made an earlier request through Telephone helpline earlier this month and would appreciate a response on its status. Please note that this has remained unresolved for three weeks. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1639",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "At Sarabha Nagar, Ludhiana, Punjab, water is backing up because the lane drain needs cleaning. I previously contacted the office through Public help desk earlier this month, but have not received a clear update. The matter has continued for two days. The issue is creating difficulty for residents who rely on timely service. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1750",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0579"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. The issue is creating difficulty for residents who rely on timely service. I first sought help about ten days ago through Mobile app, but the matter is still open. It has continued for ten days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1833",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "At Sector 14, Gurugram, Haryana, water is reaching the street only on alternate days. The matter was raised through Mobile app last week; the service issue is still unresolved. The matter has continued for two days. The delay is affecting routine access to a public service. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "1858",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. The issue is creating difficulty for residents who rely on timely service. I first sought help about ten days ago through Email, but the matter is still open. It has continued for six weeks. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2024",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Please review an unresolved public-service issue involving the road surface is broken across the lane in Sector 14, Gurugram, Haryana. This has disrupted essential work for residents in the area. Despite contacting the help desk through Mobile app three days ago, I do not know when the matter will be addressed. Please note that this has remained unresolved for six weeks. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2219",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Kindly look into the completed public work needs an inspection for visible defects in Hadapsar, Pune, Maharashtra. The delay is affecting routine access to a public service. I previously contacted the office through Web portal yesterday, but have not received a clear update. Please note that this has remained unresolved for one month. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2361",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "The road surface is broken across the lane. The delay is affecting routine access to a public service. I first sought help last week through Telephone helpline, but the matter is still open. It has continued for six weeks. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2418",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "I request assistance from the concerned office for the completed public work needs an inspection for visible defects in Peelamedu, Coimbatore, Tamil Nadu. Several households have had to make repeated visits to seek help. I previously contacted the office through Mobile app earlier this month, but have not received a clear update. Please note that this has remained unresolved for one week. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2472",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "This complaint concerns water is reaching the street only on alternate days in Sigra, Varanasi, Uttar Pradesh. A clear update would help affected residents plan their next steps. The matter was raised through Written submission last week; the service issue is still unresolved. Please note that this has remained unresolved for four days. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2507",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "Kindly look into sewage overflow at Kolar Road, Bhopal, Madhya Pradesh. Sewage is flowing onto the public lane from a damaged chamber. I have not been able to obtain a resolution after seeking assistance through Written submission last week. A clear update would help affected residents plan their next steps. The issue has continued for four days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2637",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "At Sardarpura, Jodhpur, Rajasthan, water is reaching the street only on alternate days. I have not been able to obtain a resolution after seeking assistance through Public help desk last week. The matter has continued for six weeks. Several households have had to make repeated visits to seek help. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2746",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "Please review an unresolved public-service issue involving the completed public work needs an inspection for visible defects in Gandhi Nagar, Jammu, Jammu and Kashmir. A clear update would help affected residents plan their next steps. I previously contacted the office through Mobile app yesterday, but have not received a clear update. Please note that this has remained unresolved for two weeks. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2814",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "I request assistance from the concerned office for pothole or damaged road at Sector 14, Gurugram, Haryana. The road surface is broken across the lane. I made an earlier request through Written submission two weeks ago and would appreciate a response on its status. The delay is affecting routine access to a public service. The issue has continued for one week. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "2944",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "I request assistance from the concerned office for sewage is flowing onto the public lane from a damaged chamber in Patamata, Vijayawada, Andhra Pradesh. People who depend on this service are facing avoidable inconvenience. The matter was raised through Email earlier this month; the service issue is still unresolved. Please note that this has remained unresolved for one week. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "3076",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I am submitting this grievance about sewage is flowing onto the public lane from a damaged chamber in Peelamedu, Coimbatore, Tamil Nadu. The delay is affecting routine access to a public service. The matter was raised through Mobile app three days ago; the service issue is still unresolved. Please note that this has remained unresolved for two days. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "3092",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "This complaint concerns irregular water supply at Harmu, Ranchi, Jharkhand. Water is reaching the street only on alternate days. I made an earlier request through Public help desk two weeks ago and would appreciate a response on its status. The delay is affecting routine access to a public service. The issue has continued for one week. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "3100",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "The road surface is broken across the lane. The delay is affecting routine access to a public service. I first sought help two weeks ago through Written submission, but the matter is still open. It has continued for four days. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "3251",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "I request assistance from the concerned office for pothole or damaged road at Yelahanka, Bengaluru, Karnataka. The road surface is broken across the lane. The matter was raised through Web portal three days ago; the service issue is still unresolved. The delay is affecting routine access to a public service. The issue has continued for ten days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "3709",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "At Patamata, Vijayawada, Andhra Pradesh, water is reaching the street only on alternate days. The matter was raised through Public help desk yesterday; the service issue is still unresolved. The matter has continued for one month. People who depend on this service are facing avoidable inconvenience. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "3953",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "The road surface is broken across the lane. This has disrupted essential work for residents in the area. I first sought help two weeks ago through Public help desk, but the matter is still open. It has continued for two days. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "3957",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Kindly look into sewage overflow at Sarabha Nagar, Ludhiana, Punjab. Sewage is flowing onto the public lane from a damaged chamber. The matter was raised through Web portal two weeks ago; the service issue is still unresolved. The issue is creating difficulty for residents who rely on timely service. The issue has continued for ten days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4066",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I request assistance from the concerned office for water is backing up because the lane drain needs cleaning in Mansarovar, Jaipur, Rajasthan. The issue is creating difficulty for residents who rely on timely service. I previously contacted the office through Telephone helpline earlier this month, but have not received a clear update. Please note that this has remained unresolved for two days. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4202",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0579"
+  },
+  {
+    "text": "Water is reaching the street only on alternate days. This has disrupted essential work for residents in the area. I first sought help two weeks ago through Written submission, but the matter is still open. It has continued for ten days. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4225",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "Water is reaching the street only on alternate days. Several households have had to make repeated visits to seek help. I first sought help yesterday through Written submission, but the matter is still open. It has continued for four days. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4295",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I am seeking a status update regarding public works quality or delay at Dharampeth, Nagpur, Maharashtra. The completed public work needs an inspection for visible defects. I previously contacted the office through Mobile app two weeks ago, but have not received a clear update. A clear update would help affected residents plan their next steps. The issue has continued for ten days. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4377",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "The road surface is broken across the lane. The delay is affecting routine access to a public service. I first sought help yesterday through Public help desk, but the matter is still open. It has continued for one month. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4517",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "I request assistance from the concerned office for irregular water supply at Nazarbad, Mysuru, Karnataka. Water is reaching the street only on alternate days. The matter was raised through Web portal last week; the service issue is still unresolved. The delay is affecting routine access to a public service. The issue has continued for three weeks. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4846",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I request assistance from the concerned office for water is reaching the street only on alternate days in Adajan, Surat, Gujarat. The issue is creating difficulty for residents who rely on timely service. I have not been able to obtain a resolution after seeking assistance through Web portal two weeks ago. Please note that this has remained unresolved for six weeks. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4956",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I request assistance from the concerned office for pothole or damaged road at Sardarpura, Jodhpur, Rajasthan. The road surface is broken across the lane. I made an earlier request through Public help desk about ten days ago and would appreciate a response on its status. Several households have had to make repeated visits to seek help. The issue has continued for four days. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "4959",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Please review an unresolved public-service issue involving water is reaching the street only on alternate days in Rohini, New Delhi, Delhi. A clear update would help affected residents plan their next steps. Despite contacting the help desk through Public help desk earlier this month, I do not know when the matter will be addressed. Please note that this has remained unresolved for six weeks. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "5048",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I request assistance from the concerned office for sewage overflow at Shankar Nagar, Raipur, Chhattisgarh. Sewage is flowing onto the public lane from a damaged chamber. I made an earlier request through Web portal last week and would appreciate a response on its status. This has disrupted essential work for residents in the area. The issue has continued for ten days. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "5127",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Kindly look into the road surface is broken across the lane in Patia, Bhubaneswar, Odisha. A clear update would help affected residents plan their next steps. The matter was raised through Written submission yesterday; the service issue is still unresolved. Please note that this has remained unresolved for two weeks. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "5176",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Water is reaching the street only on alternate days. The delay is affecting routine access to a public service. I first sought help three days ago through Written submission, but the matter is still open. It has continued for three weeks. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "5395",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "Kindly look into water is reaching the street only on alternate days in Kankarbagh, Patna, Bihar. The issue is creating difficulty for residents who rely on timely service. I made an earlier request through Written submission last week and would appreciate a response on its status. Please note that this has remained unresolved for two days. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "5486",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "The road surface is broken across the lane. A clear update would help affected residents plan their next steps. I first sought help earlier this month through Mobile app, but the matter is still open. It has continued for six weeks. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "5503",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "The road surface is broken across the lane. A clear update would help affected residents plan their next steps. I first sought help two weeks ago through Email, but the matter is still open. It has continued for three weeks. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "5986",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "I am submitting this grievance about sewage is flowing onto the public lane from a damaged chamber in Mansarovar, Jaipur, Rajasthan. Several households have had to make repeated visits to seek help. Despite contacting the help desk through Public help desk last week, I do not know when the matter will be addressed. Please note that this has remained unresolved for six weeks. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6007",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I am submitting this grievance about water is collecting around a damaged supply line in Vijay Nagar, Indore, Madhya Pradesh. The issue is creating difficulty for residents who rely on timely service. I previously contacted the office through Web portal about ten days ago, but have not received a clear update. Please note that this has remained unresolved for four days. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6055",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0240"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. A clear update would help affected residents plan their next steps. I first sought help earlier this month through Web portal, but the matter is still open. It has continued for one month. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6067",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "This complaint concerns drain cleaning at Sardarpura, Jodhpur, Rajasthan. The roadside drain is blocked with accumulated silt. I previously contacted the office through Mobile app last week, but have not received a clear update. Several households have had to make repeated visits to seek help. The issue has continued for six weeks. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6115",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0525"
+  },
+  {
+    "text": "Kindly look into irregular water supply at Vijay Nagar, Indore, Madhya Pradesh. Water is reaching the street only on alternate days. The matter was raised through Telephone helpline last week; the service issue is still unresolved. A clear update would help affected residents plan their next steps. The issue has continued for four days. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6129",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "This complaint concerns water is reaching the street only on alternate days in Harmu, Ranchi, Jharkhand. The issue is creating difficulty for residents who rely on timely service. I made an earlier request through Telephone helpline yesterday and would appreciate a response on its status. Please note that this has remained unresolved for one week. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6159",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I am submitting this grievance about public works quality or delay at Harmu, Ranchi, Jharkhand. The completed public work needs an inspection for visible defects. I previously contacted the office through Email yesterday, but have not received a clear update. Several households have had to make repeated visits to seek help. The issue has continued for two days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6338",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "At Patamata, Vijayawada, Andhra Pradesh, drainage near the bridge is obstructed by debris. I previously contacted the office through Telephone helpline three days ago, but have not received a clear update. The matter has continued for ten days. A clear update would help affected residents plan their next steps. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6472",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0129"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. A clear update would help affected residents plan their next steps. I first sought help two weeks ago through Web portal, but the matter is still open. It has continued for two days. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6583",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. This has disrupted essential work for residents in the area. I first sought help three days ago through Public help desk, but the matter is still open. It has continued for three weeks. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6690",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I am seeking a status update regarding water is collecting around a damaged supply line in Panchavati, Nashik, Maharashtra. Several households have had to make repeated visits to seek help. I previously contacted the office through Email about ten days ago, but have not received a clear update. Please note that this has remained unresolved for ten days. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "6889",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0240"
+  },
+  {
+    "text": "Kindly look into a manhole overflow has not been attended after a report in Nazarbad, Mysuru, Karnataka. The delay is affecting routine access to a public service. I previously contacted the office through Mobile app about ten days ago, but have not received a clear update. Please note that this has remained unresolved for three weeks. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7213",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0033"
+  },
+  {
+    "text": "At Maninagar, Ahmedabad, Gujarat, sewage is flowing onto the public lane from a damaged chamber. I have not been able to obtain a resolution after seeking assistance through Web portal earlier this month. The matter has continued for six weeks. This has disrupted essential work for residents in the area. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7350",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I am submitting this grievance about sewage overflow at Rohini, New Delhi, Delhi. Sewage is flowing onto the public lane from a damaged chamber. I have not been able to obtain a resolution after seeking assistance through Mobile app last week. People who depend on this service are facing avoidable inconvenience. The issue has continued for six weeks. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7420",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Water is reaching the street only on alternate days. Several households have had to make repeated visits to seek help. I first sought help earlier this month through Mobile app, but the matter is still open. It has continued for one week. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7506",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "This complaint concerns sewage is flowing onto the public lane from a damaged chamber in Panchavati, Nashik, Maharashtra. This has disrupted essential work for residents in the area. The matter was raised through Mobile app two weeks ago; the service issue is still unresolved. Please note that this has remained unresolved for two weeks. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7588",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. People who depend on this service are facing avoidable inconvenience. I first sought help two weeks ago through Email, but the matter is still open. It has continued for ten days. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7661",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. Several households have had to make repeated visits to seek help. I first sought help last week through Public help desk, but the matter is still open. It has continued for ten days. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7672",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I request assistance from the concerned office for pothole or damaged road at Sardarpura, Jodhpur, Rajasthan. The road surface is broken across the lane. I have not been able to obtain a resolution after seeking assistance through Telephone helpline two weeks ago. The issue is creating difficulty for residents who rely on timely service. The issue has continued for one month. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7674",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Water is reaching the street only on alternate days. A clear update would help affected residents plan their next steps. I first sought help about ten days ago through Web portal, but the matter is still open. It has continued for two weeks. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "7992",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "At Dispur, Guwahati, Assam, sewage is flowing onto the public lane from a damaged chamber. I made an earlier request through Mobile app about ten days ago and would appreciate a response on its status. The matter has continued for three weeks. Several households have had to make repeated visits to seek help. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "8124",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "At Kolar Road, Bhopal, Madhya Pradesh, water is reaching the street only on alternate days. I have not been able to obtain a resolution after seeking assistance through Telephone helpline about ten days ago. The matter has continued for ten days. People who depend on this service are facing avoidable inconvenience. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "8263",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "Kindly look into water is reaching the street only on alternate days in Hadapsar, Pune, Maharashtra. This has disrupted essential work for residents in the area. Despite contacting the help desk through Mobile app three days ago, I do not know when the matter will be addressed. Please note that this has remained unresolved for one week. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "8351",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "Kindly look into the road surface is broken across the lane in Sardarpura, Jodhpur, Rajasthan. The issue is creating difficulty for residents who rely on timely service. I made an earlier request through Email about ten days ago and would appreciate a response on its status. Please note that this has remained unresolved for ten days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "8355",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "I am submitting this grievance about the road surface is broken across the lane in Dispur, Guwahati, Assam. Several households have had to make repeated visits to seek help. The matter was raised through Web portal earlier this month; the service issue is still unresolved. Please note that this has remained unresolved for two weeks. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "8475",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Kindly look into water is reaching the street only on alternate days in Sanjauli, Shimla, Himachal Pradesh. The delay is affecting routine access to a public service. I previously contacted the office through Web portal two weeks ago, but have not received a clear update. Please note that this has remained unresolved for three weeks. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "8603",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0592"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. The delay is affecting routine access to a public service. I first sought help two weeks ago through Telephone helpline, but the matter is still open. It has continued for three weeks. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "8700",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I am submitting this grievance about pothole or damaged road at Kankarbagh, Patna, Bihar. The road surface is broken across the lane. The matter was raised through Public help desk two weeks ago; the service issue is still unresolved. This has disrupted essential work for residents in the area. The issue has continued for one week. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "8823",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "I am submitting this grievance about water is reaching the street only on alternate days in Maninagar, Ahmedabad, Gujarat. The issue is creating difficulty for residents who rely on timely service. I made an earlier request through Written submission yesterday and would appreciate a response on its status. Please note that this has remained unresolved for three weeks. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "9219",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "This complaint concerns irregular water supply at Adajan, Surat, Gujarat. Water is reaching the street only on alternate days. The matter was raised through Public help desk last week; the service issue is still unresolved. A clear update would help affected residents plan their next steps. The issue has continued for two days. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "9444",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "At Sarabha Nagar, Ludhiana, Punjab, sewage is flowing onto the public lane from a damaged chamber. I have not been able to obtain a resolution after seeking assistance through Web portal last week. The matter has continued for ten days. This has disrupted essential work for residents in the area. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "9479",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Water is reaching the street only on alternate days. The delay is affecting routine access to a public service. I first sought help last week through Public help desk, but the matter is still open. It has continued for six weeks. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "9524",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "At Sardarpura, Jodhpur, Rajasthan, sewage is flowing onto the public lane from a damaged chamber. I have not been able to obtain a resolution after seeking assistance through Mobile app three days ago. The matter has continued for ten days. This has disrupted essential work for residents in the area. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "9707",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Kindly look into irregular water supply at Dharampeth, Nagpur, Maharashtra. Water is reaching the street only on alternate days. I have not been able to obtain a resolution after seeking assistance through Email earlier this month. The issue is creating difficulty for residents who rely on timely service. The issue has continued for ten days. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "9772",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "At Sigra, Varanasi, Uttar Pradesh, sewage is flowing onto the public lane from a damaged chamber. I have not been able to obtain a resolution after seeking assistance through Public help desk about ten days ago. The matter has continued for one week. This has disrupted essential work for residents in the area. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "9827",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I am submitting this grievance about the roadside drain is blocked with accumulated silt in Raipur Road, Dehradun, Uttarakhand. The issue is creating difficulty for residents who rely on timely service. I previously contacted the office through Written submission earlier this month, but have not received a clear update. Please note that this has remained unresolved for three weeks. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "9866",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0525"
+  },
+  {
+    "text": "Kindly look into the completed public work needs an inspection for visible defects in Gandhi Nagar, Jammu, Jammu and Kashmir. Several households have had to make repeated visits to seek help. I previously contacted the office through Mobile app yesterday, but have not received a clear update. Please note that this has remained unresolved for three weeks. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "10184",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "This complaint concerns drain cleaning at Sardarpura, Jodhpur, Rajasthan. The roadside drain is blocked with accumulated silt. I previously contacted the office through Written submission earlier this month, but have not received a clear update. This has disrupted essential work for residents in the area. The issue has continued for four days. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "10195",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0525"
+  },
+  {
+    "text": "At Nazarbad, Mysuru, Karnataka, sewage is flowing onto the public lane from a damaged chamber. I made an earlier request through Email about ten days ago and would appreciate a response on its status. The matter has continued for one week. A clear update would help affected residents plan their next steps. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "10271",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Kindly look into pothole or damaged road at Dispur, Guwahati, Assam. The road surface is broken across the lane. The matter was raised through Public help desk two weeks ago; the service issue is still unresolved. The issue is creating difficulty for residents who rely on timely service. The issue has continued for six weeks. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "10524",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "At Patia, Bhubaneswar, Odisha, a damaged culvert barrier needs inspection. I previously contacted the office through Written submission about ten days ago, but have not received a clear update. The matter has continued for one month. The delay is affecting routine access to a public service. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "10828",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0010"
+  },
+  {
+    "text": "I am seeking a status update regarding pothole or damaged road at Nazarbad, Mysuru, Karnataka. The road surface is broken across the lane. The matter was raised through Web portal about ten days ago; the service issue is still unresolved. The delay is affecting routine access to a public service. The issue has continued for three weeks. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "10924",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Please review an unresolved public-service issue involving drain cleaning at Kolar Road, Bhopal, Madhya Pradesh. Water is backing up because the lane drain needs cleaning. I previously contacted the office through Telephone helpline earlier this month, but have not received a clear update. Several households have had to make repeated visits to seek help. The issue has continued for four days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "11098",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0579"
+  },
+  {
+    "text": "At Sardarpura, Jodhpur, Rajasthan, the road surface is broken across the lane. Despite contacting the help desk through Telephone helpline earlier this month, I do not know when the matter will be addressed. The matter has continued for one month. The delay is affecting routine access to a public service. Please arrange the necessary service review and let affected residents know the next steps.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "11124",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "At Peelamedu, Coimbatore, Tamil Nadu, water is reaching the street only on alternate days. Despite contacting the help desk through Email three days ago, I do not know when the matter will be addressed. The matter has continued for one week. Several households have had to make repeated visits to seek help. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "11395",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "Water is reaching the street only on alternate days. A clear update would help affected residents plan their next steps. I first sought help two weeks ago through Email, but the matter is still open. It has continued for two days. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "11543",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I am seeking a status update regarding sewage is flowing onto the public lane from a damaged chamber in Rohini, New Delhi, Delhi. A clear update would help affected residents plan their next steps. Despite contacting the help desk through Telephone helpline three days ago, I do not know when the matter will be addressed. Please note that this has remained unresolved for two days. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "11741",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. People who depend on this service are facing avoidable inconvenience. I first sought help two weeks ago through Email, but the matter is still open. It has continued for one month. Kindly investigate the delay and communicate a reasonable resolution timeline.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "11892",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "At Gandhi Nagar, Jammu, Jammu and Kashmir, a new household connection request has no inspection update. I previously contacted the office through Web portal three days ago, but have not received a clear update. The matter has continued for one month. Several households have had to make repeated visits to seek help. Please register the complaint, inspect the matter, and share the action taken.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "11992",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0065"
+  },
+  {
+    "text": "At Nazarbad, Mysuru, Karnataka, the completed public work needs an inspection for visible defects. I previously contacted the office through Public help desk earlier this month, but have not received a clear update. The matter has continued for one week. The delay is affecting routine access to a public service. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12034",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "I am seeking a status update regarding water is reaching the street only on alternate days in Velachery, Chennai, Tamil Nadu. Several households have had to make repeated visits to seek help. I previously contacted the office through Written submission about ten days ago, but have not received a clear update. Please note that this has remained unresolved for two days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12051",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0243"
+  },
+  {
+    "text": "I am seeking a status update regarding road excavation restoration at Edappally, Kochi, Kerala. An old utility trench has not been restored to road level. I previously contacted the office through Email three days ago, but have not received a clear update. A clear update would help affected residents plan their next steps. The issue has continued for four days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12065",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0061"
+  },
+  {
+    "text": "Kindly look into public bin overflow at Mansarovar, Jaipur, Rajasthan. Waste is spilling from the shared collection container. I previously contacted the office through Telephone helpline yesterday, but have not received a clear update. The delay is affecting routine access to a public service. The issue has continued for one week. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "garbage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12187",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0564"
+  },
+  {
+    "text": "At Sardarpura, Jodhpur, Rajasthan, a manhole overflow has not been attended after a report. I previously contacted the office through Mobile app last week, but have not received a clear update. The matter has continued for two weeks. People who depend on this service are facing avoidable inconvenience. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12188",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0033"
+  },
+  {
+    "text": "The road surface is broken across the lane. A clear update would help affected residents plan their next steps. I first sought help about ten days ago through Written submission, but the matter is still open. It has continued for two weeks. Please verify the records, correct the issue where appropriate, and update the applicant.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12292",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0515"
+  },
+  {
+    "text": "Sewage is flowing onto the public lane from a damaged chamber. A clear update would help affected residents plan their next steps. I first sought help two weeks ago through Telephone helpline, but the matter is still open. It has continued for ten days. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "drainage",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12314",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0215"
+  },
+  {
+    "text": "I request assistance from the concerned office for irregular water supply at Edappally, Kochi, Kerala. Water is reaching the street only on alternate days. The matter was raised through Telephone helpline three days ago; the service issue is still unresolved. This has disrupted essential work for residents in the area. The issue has continued for two weeks. I request an acknowledgement and a clear update from the department handling this service.",
+    "lang": "en",
+    "category": "water",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12410",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0587"
+  },
+  {
+    "text": "I am seeking a status update regarding public works quality or delay at Shankar Nagar, Raipur, Chhattisgarh. The completed public work needs an inspection for visible defects. I previously contacted the office through Public help desk yesterday, but have not received a clear update. The issue is creating difficulty for residents who rely on timely service. The issue has continued for one month. Please route this to the responsible team and provide a reference for follow-up.",
+    "lang": "en",
+    "category": "roads",
+    "source": "hackermango/Public_Grievance_Dataset",
+    "source_id": "12441",
+    "source_kind": "provenance undocumented; templated text",
+    "group_id": "pattern_0475"
+  },
+  {
+    "text": "How to apply for new water connection?",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_003",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0191"
+  },
+  {
+    "text": "Why is my previous request still pending?",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_016",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0639"
+  },
+  {
+    "text": "The road is very bad cannot travel",
+    "lang": "en",
+    "category": "roads",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_023",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0513"
+  },
+  {
+    "text": "No response for previous complaint",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_039",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0284"
+  },
+  {
+    "text": "There is a pothole on the road please fix",
+    "lang": "en",
+    "category": "roads",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_047",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0551"
+  },
+  {
+    "text": "When will I get water connection for my house",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_063",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0637"
+  },
+  {
+    "text": "Sewage water is overflowing causing health issues",
+    "lang": "en",
+    "category": "drainage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_065",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0387"
+  },
+  {
+    "text": "No response for my previous complaint",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_067",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0284"
+  },
+  {
+    "text": "Garbage collection is not happening properly",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_073",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0149"
+  },
+  {
+    "text": "It is scary at night due to no lighting",
+    "lang": "en",
+    "category": "lights",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_079",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0256"
+  },
+  {
+    "text": "Sewage overflowing on the street causing health issues",
+    "lang": "en",
+    "category": "drainage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_084",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0387"
+  },
+  {
+    "text": "Pipe is broken and water is wasting",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_087",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0303"
+  },
+  {
+    "text": "Street lights not working for many days",
+    "lang": "en",
+    "category": "lights",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_096",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0435"
+  },
+  {
+    "text": "Garbage near school",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_128",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0166"
+  },
+  {
+    "text": "Water tank not cleaned",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_131",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0634"
+  },
+  {
+    "text": "Street light recurring issue",
+    "lang": "en",
+    "category": "lights",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_161",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0429"
+  },
+  {
+    "text": "Localized water shortage",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_182",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0260"
+  },
+  {
+    "text": "Water connection delayed",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_202",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0568"
+  },
+  {
+    "text": "Localized issue",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_232",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0259"
+  },
+  {
+    "text": "Water connection application pending",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_243",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0567"
+  },
+  {
+    "text": "No response to previous complaint",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_249",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0284"
+  },
+  {
+    "text": "Why is water connection delayed",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_253",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0568"
+  },
+  {
+    "text": "Street light replacement not done",
+    "lang": "en",
+    "category": "lights",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_263",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0430"
+  },
+  {
+    "text": "Smoke due to garbage burning",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_268",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0142"
+  },
+  {
+    "text": "Drain not cleaned for weeks",
+    "lang": "en",
+    "category": "drainage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_274",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0108"
+  },
+  {
+    "text": "Pipe burst causing road damage",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_288",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0302"
+  },
+  {
+    "text": "Garbage collection delayed daily",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_291",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0147"
+  },
+  {
+    "text": "Urgent street light maintenance",
+    "lang": "en",
+    "category": "lights",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_299",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0557"
+  },
+  {
+    "text": "Garbage collection delay continues",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_326",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0145"
+  },
+  {
+    "text": "Road repair not done yet",
+    "lang": "en",
+    "category": "roads",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_361",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0342"
+  },
+  {
+    "text": "Garbage collection irregular",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_376",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0148"
+  },
+  {
+    "text": "Garbage issue increasing",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_386",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0164"
+  },
+  {
+    "text": "Water supply stopped",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_389",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0631"
+  },
+  {
+    "text": "Severe drain blockage",
+    "lang": "en",
+    "category": "drainage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_391",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0370"
+  },
+  {
+    "text": "Garbage collection not happening properly",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_408",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0149"
+  },
+  {
+    "text": "Road repair work is delayed",
+    "lang": "en",
+    "category": "roads",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_429",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0347"
+  },
+  {
+    "text": "Drain smell still present",
+    "lang": "en",
+    "category": "drainage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_432",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0116"
+  },
+  {
+    "text": "Garbage collection still irregular",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_444",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0148"
+  },
+  {
+    "text": "Foul smell due to unclean drainage",
+    "lang": "en",
+    "category": "drainage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_464",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0135"
+  },
+  {
+    "text": "Street light not fixed",
+    "lang": "en",
+    "category": "lights",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_499",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0416"
+  },
+  {
+    "text": "No water for 2 days",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_501",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0289"
+  },
+  {
+    "text": "Garbage not cleared for 3 days",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_512",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0168"
+  },
+  {
+    "text": "Garbage burning smoke issue",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_521",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0142"
+  },
+  {
+    "text": "Water stopped no notice",
+    "lang": "en",
+    "category": "water",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_533",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0617"
+  },
+  {
+    "text": "Drain overflow causing issue",
+    "lang": "en",
+    "category": "drainage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_557",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0111"
+  },
+  {
+    "text": "Road damaging vehicles",
+    "lang": "en",
+    "category": "roads",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_584",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0327"
+  },
+  {
+    "text": "Street completely dark",
+    "lang": "en",
+    "category": "lights",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_585",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0400"
+  },
+  {
+    "text": "Garbage bin overflow",
+    "lang": "en",
+    "category": "garbage",
+    "source": "JadeSamLee/civicdex",
+    "source_id": "CDX_593",
+    "source_kind": "prototype/synthetic per dataset card",
+    "group_id": "pattern_0136"
+  }
+]

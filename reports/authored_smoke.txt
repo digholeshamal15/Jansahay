@@ -1,0 +1,59 @@
+
+Language: en — only 5 authored test examples
+              precision    recall  f1-score   support
+
+    drainage       1.00      1.00      1.00         1
+     garbage       1.00      1.00      1.00         1
+      lights       1.00      1.00      1.00         1
+       roads       1.00      1.00      1.00         1
+       water       1.00      1.00      1.00         1
+
+    accuracy                           1.00         5
+   macro avg       1.00      1.00      1.00         5
+weighted avg       1.00      1.00      1.00         5
+
+water      -> water      Water supply stopped yesterday in my apartment
+garbage    -> garbage    Uncollected garbage is lying outside the shop
+roads      -> roads      Potholes make the main road difficult to use
+lights     -> lights     Street lamps near our houses have stopped working
+drainage   -> drainage   Sewage keeps coming out of the blocked drain
+
+Language: hi — only 5 authored test examples
+              precision    recall  f1-score   support
+
+    drainage       1.00      1.00      1.00         1
+     garbage       1.00      1.00      1.00         1
+      lights       1.00      1.00      1.00         1
+       roads       1.00      1.00      1.00         1
+       water       1.00      1.00      1.00         1
+
+    accuracy                           1.00         5
+   macro avg       1.00      1.00      1.00         5
+weighted avg       1.00      1.00      1.00         5
+
+water      -> water      आज हमारे घर पानी की सप्लाई बंद है
+garbage    -> garbage    दुकान के सामने कूड़े का ढेर लगा है
+roads      -> roads      मुख्य सड़क पर बहुत सारे गड्ढे हो गए हैं
+lights     -> lights     हमारे मकान के पास सड़क की लाइट खराब है
+drainage   -> drainage   बंद नाले से सीवर का पानी निकल रहा है
+
+Language: mr — only 5 authored test examples
+              precision    recall  f1-score   support
+
+    drainage       1.00      1.00      1.00         1
+     garbage       1.00      1.00      1.00         1
+      lights       1.00      1.00      1.00         1
+       roads       1.00      1.00      1.00         1
+       water       1.00      1.00      1.00         1
+
+    accuracy                           1.00         5
+   macro avg       1.00      1.00      1.00         5
+weighted avg       1.00      1.00      1.00         5
+
+water      -> water      कालपासून आमच्या घरी पाणीपुरवठा बंद आहे
+garbage    -> garbage    दुकानासमोर कचरा साचला आहे
+roads      -> roads      मुख्य रस्त्यावर अनेक खड्डे पडले आहेत
+lights     -> lights     आमच्या घराजवळ रस्त्याचा दिवा लागत नाही
+drainage   -> drainage   तुंबलेल्या गटारातून सांडपाणी बाहेर पडते
+
+This is a smoke check, not evidence of general-world accuracy. Collect independently labelled local feedback for a real evaluation.

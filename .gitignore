@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+instance/
+nltk_data/
+*.pyc
+data/source_cache/

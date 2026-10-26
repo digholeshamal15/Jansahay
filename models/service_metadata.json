@@ -1,0 +1,365 @@
+{
+  "trained_at": "2026-10-22T16:54:14.041352+00:00",
+  "training_sha256": "b0c7ad919ab42a40f0f21476af4e0c0c6edec1327cb37ba1569a478939ea3c65",
+  "training_messages": 1331,
+  "sklearn_version": "1.8.0",
+  "sources": {
+    "hackermango/Public_Grievance_Dataset": 1017,
+    "JadeSamLee/civicdex": 224,
+    "JanSahay authored": 90
+  },
+  "languages": {
+    "en": 1271,
+    "hi": 30,
+    "mr": 30
+  },
+  "method": "Character 2–5-gram TF-IDF (max 60000), logistic regression C=8; weights balance language/category cells.",
+  "settings": "Fixed before inspecting held-out results; no parameter search on test set.",
+  "evaluation_scope": "Classifier argmax and UI routing with abstention are reported separately. Test data is English-only, synthetic/templated; not a Marathi/Hindi benchmark.",
+  "reports": {
+    "validation": {
+      "samples": 159,
+      "accuracy": 0.9308176100628931,
+      "classification_report": {
+        "water": {
+          "precision": 0.8571428571428571,
+          "recall": 0.96,
+          "f1-score": 0.9056603773584906,
+          "support": 50.0
+        },
+        "garbage": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 16.0
+        },
+        "roads": {
+          "precision": 0.9534883720930233,
+          "recall": 1.0,
+          "f1-score": 0.9761904761904762,
+          "support": 41.0
+        },
+        "lights": {
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1-score": 0.9333333333333333,
+          "support": 7.0
+        },
+        "drainage": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 45.0
+        },
+        "accuracy": 0.9308176100628931,
+        "macro avg": {
+          "precision": 0.9371262458471762,
+          "recall": 0.952,
+          "f1-score": 0.9408146151542379,
+          "support": 159.0
+        },
+        "weighted avg": {
+          "precision": 0.9375796610877788,
+          "recall": 0.9308176100628931,
+          "f1-score": 0.9298123378935056,
+          "support": 159.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          48,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          41,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          0
+        ],
+        [
+          8,
+          0,
+          1,
+          0,
+          36
+        ]
+      ],
+      "labels": [
+        "water",
+        "garbage",
+        "roads",
+        "lights",
+        "drainage"
+      ],
+      "ui_routing": {
+        "coverage": 0.7735849056603774,
+        "accepted_count": 123,
+        "abstained_count": 36,
+        "accuracy_counting_abstention_as_error": 0.7610062893081762,
+        "accuracy_when_suggesting": 0.983739837398374,
+        "macro_f1": 0.8520096200818041
+      },
+      "languages": {
+        "en": 159
+      },
+      "errors": [
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "576",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "1154",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "3076",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "6007",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "6583",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "7672",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "10271",
+          "expected": "drainage",
+          "predicted": "roads"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "11741",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "12314",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "JadeSamLee/civicdex",
+          "source_id": "CDX_232",
+          "expected": "water",
+          "predicted": "lights"
+        },
+        {
+          "source": "JadeSamLee/civicdex",
+          "source_id": "CDX_288",
+          "expected": "water",
+          "predicted": "roads"
+        }
+      ]
+    },
+    "test": {
+      "samples": 380,
+      "accuracy": 0.9710526315789474,
+      "classification_report": {
+        "water": {
+          "precision": 0.9642857142857143,
+          "recall": 0.9908256880733946,
+          "f1-score": 0.9773755656108597,
+          "support": 109.0
+        },
+        "garbage": {
+          "precision": 0.9651162790697675,
+          "recall": 1.0,
+          "f1-score": 0.9822485207100592,
+          "support": 83.0
+        },
+        "roads": {
+          "precision": 0.9655172413793104,
+          "recall": 0.9824561403508771,
+          "f1-score": 0.9739130434782609,
+          "support": 114.0
+        },
+        "lights": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 14.0
+        },
+        "drainage": {
+          "precision": 1.0,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.9285714285714286,
+          "support": 60.0
+        },
+        "accuracy": 0.9710526315789474,
+        "macro avg": {
+          "precision": 0.9789838469469585,
+          "recall": 0.9679896990181878,
+          "f1-score": 0.9724217116741217,
+          "support": 380.0
+        },
+        "weighted avg": {
+          "precision": 0.9717914724662499,
+          "recall": 0.9710526315789474,
+          "f1-score": 0.9705287803719107,
+          "support": 380.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          108,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          83,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          112,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          14,
+          0
+        ],
+        [
+          4,
+          1,
+          3,
+          0,
+          52
+        ]
+      ],
+      "labels": [
+        "water",
+        "garbage",
+        "roads",
+        "lights",
+        "drainage"
+      ],
+      "ui_routing": {
+        "coverage": 0.7394736842105263,
+        "accepted_count": 281,
+        "abstained_count": 99,
+        "accuracy_counting_abstention_as_error": 0.7263157894736842,
+        "accuracy_when_suggesting": 0.9822064056939501,
+        "macro_f1": 0.8656412773774811
+      },
+      "languages": {
+        "en": 380
+      },
+      "errors": [
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "2154",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "2544",
+          "expected": "drainage",
+          "predicted": "roads"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "3103",
+          "expected": "drainage",
+          "predicted": "garbage"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "4024",
+          "expected": "drainage",
+          "predicted": "roads"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "4692",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "10152",
+          "expected": "drainage",
+          "predicted": "roads"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "10223",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "hackermango/Public_Grievance_Dataset",
+          "source_id": "12380",
+          "expected": "drainage",
+          "predicted": "water"
+        },
+        {
+          "source": "JadeSamLee/civicdex",
+          "source_id": "CDX_030",
+          "expected": "water",
+          "predicted": "roads"
+        },
+        {
+          "source": "JadeSamLee/civicdex",
+          "source_id": "CDX_127",
+          "expected": "roads",
+          "predicted": "garbage"
+        },
+        {
+          "source": "JadeSamLee/civicdex",
+          "source_id": "CDX_221",
+          "expected": "roads",
+          "predicted": "garbage"
+        }
+      ]
+    }
+  }
+}

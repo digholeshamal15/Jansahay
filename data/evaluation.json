@@ -1,0 +1,77 @@
+[
+  {
+    "lang": "en",
+    "category": "water",
+    "text": "Water supply stopped yesterday in my apartment"
+  },
+  {
+    "lang": "hi",
+    "category": "water",
+    "text": "आज हमारे घर पानी की सप्लाई बंद है"
+  },
+  {
+    "lang": "mr",
+    "category": "water",
+    "text": "कालपासून आमच्या घरी पाणीपुरवठा बंद आहे"
+  },
+  {
+    "lang": "en",
+    "category": "garbage",
+    "text": "Uncollected garbage is lying outside the shop"
+  },
+  {
+    "lang": "hi",
+    "category": "garbage",
+    "text": "दुकान के सामने कूड़े का ढेर लगा है"
+  },
+  {
+    "lang": "mr",
+    "category": "garbage",
+    "text": "दुकानासमोर कचरा साचला आहे"
+  },
+  {
+    "lang": "en",
+    "category": "roads",
+    "text": "Potholes make the main road difficult to use"
+  },
+  {
+    "lang": "hi",
+    "category": "roads",
+    "text": "मुख्य सड़क पर बहुत सारे गड्ढे हो गए हैं"
+  },
+  {
+    "lang": "mr",
+    "category": "roads",
+    "text": "मुख्य रस्त्यावर अनेक खड्डे पडले आहेत"
+  },
+  {
+    "lang": "en",
+    "category": "lights",
+    "text": "Street lamps near our houses have stopped working"
+  },
+  {
+    "lang": "hi",
+    "category": "lights",
+    "text": "हमारे मकान के पास सड़क की लाइट खराब है"
+  },
+  {
+    "lang": "mr",
+    "category": "lights",
+    "text": "आमच्या घराजवळ रस्त्याचा दिवा लागत नाही"
+  },
+  {
+    "lang": "en",
+    "category": "drainage",
+    "text": "Sewage keeps coming out of the blocked drain"
+  },
+  {
+    "lang": "hi",
+    "category": "drainage",
+    "text": "बंद नाले से सीवर का पानी निकल रहा है"
+  },
+  {
+    "lang": "mr",
+    "category": "drainage",
+    "text": "तुंबलेल्या गटारातून सांडपाणी बाहेर पडते"
+  }
+]

@@ -1,0 +1,41 @@
+test_assignment_two_uses_civic_corpus_and_unicode (test_assignments.AssignmentTests.test_assignment_two_uses_civic_corpus_and_unicode) ... ok
+test_catalog_has_all_eleven_with_translated_feature_mapping (test_assignments.AssignmentTests.test_catalog_has_all_eleven_with_translated_feature_mapping) ... ok
+test_each_demo_returns_specific_evidence (test_assignments.AssignmentTests.test_each_demo_returns_specific_evidence) ... ok
+test_english_only_tasks_are_not_fabricated_for_indic (test_assignments.AssignmentTests.test_english_only_tasks_are_not_fabricated_for_indic) ... ok
+test_html_demo_does_not_execute_or_fetch_and_removes_noncontent (test_assignments.AssignmentTests.test_html_demo_does_not_execute_or_fetch_and_removes_noncontent) ... ok
+test_pipeline_matches_public_analysis_without_saving (test_assignments.AssignmentTests.test_pipeline_matches_public_analysis_without_saving) ... ok
+test_selected_ngram_order_and_validation (test_assignments.AssignmentTests.test_selected_ngram_order_and_validation) ... ok
+test_civic_jsonl_and_limit (test_project.ProjectTests.test_civic_jsonl_and_limit) ... ok
+test_civic_message_statistics (test_project.ProjectTests.test_civic_message_statistics) ... ok
+test_external_split_integrity (test_project.ProjectTests.test_external_split_integrity) ... ok
+test_indic_combining_marks_and_danda (test_project.ProjectTests.test_indic_combining_marks_and_danda) ... ok
+test_main_app_uses_hf_trained_model (test_project.ProjectTests.test_main_app_uses_hf_trained_model) ... ok
+test_multilingual_category_and_original_text (test_project.ProjectTests.test_multilingual_category_and_original_text) ... ok
+test_ngram_hand_calculation_normalization_and_unknown (test_project.ProjectTests.test_ngram_hand_calculation_normalization_and_unknown) ... ok
+test_no_fake_indic_pos (test_project.ProjectTests.test_no_fake_indic_pos) ... ok
+test_page_and_local_assets (test_project.ProjectTests.test_page_and_local_assets) ... ok
+test_scraper_html_extraction (test_project.ProjectTests.test_scraper_html_extraction) ... ok
+test_storage_requires_explicit_save_and_delete (test_project.ProjectTests.test_storage_requires_explicit_save_and_delete) ... ok
+test_topics_and_sentiment (test_project.ProjectTests.test_topics_and_sentiment) ... ok
+test_unknown_and_override (test_project.ProjectTests.test_unknown_and_override) ... ok
+test_validation_and_origin (test_project.ProjectTests.test_validation_and_origin) ... ok
+test_all_five_categories_and_other_in_three_languages (test_workflow.WorkflowTests.test_all_five_categories_and_other_in_three_languages) ... ok
+test_directory_uses_reviewed_https_links (test_workflow.WorkflowTests.test_directory_uses_reviewed_https_links) ... ok
+test_followup_reference_dates_and_history (test_workflow.WorkflowTests.test_followup_reference_dates_and_history) ... ok
+test_invalid_status_date_details_and_origin (test_workflow.WorkflowTests.test_invalid_status_date_details_and_origin) ... ok
+test_invalid_uploads_rejected (test_workflow.WorkflowTests.test_invalid_uploads_rejected) ... ok
+test_legacy_migration_preserves_drafts_and_ids (test_workflow.WorkflowTests.test_legacy_migration_preserves_drafts_and_ids) ... ok
+test_optional_facts_are_only_included_when_provided (test_workflow.WorkflowTests.test_optional_facts_are_only_included_when_provided) ... ok
+test_partial_model_download_falls_back_to_training_data (test_workflow.WorkflowTests.test_partial_model_download_falls_back_to_training_data) ... /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py:354: ResourceWarning: unclosed file <_io.FileIO name=3 mode='rb+' closefd=True>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_photo_count_and_cross_complaint_linking (test_workflow.WorkflowTests.test_photo_count_and_cross_complaint_linking) ... ok
+test_photo_validation_safe_storage_and_delete_cascade (test_workflow.WorkflowTests.test_photo_validation_safe_storage_and_delete_cascade) ... ok
+test_portal_handoff_never_marks_submission (test_workflow.WorkflowTests.test_portal_handoff_never_marks_submission) ... ok
+test_search_and_exports_with_history_and_unicode (test_workflow.WorkflowTests.test_search_and_exports_with_history_and_unicode) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 8.320s
+
+OK

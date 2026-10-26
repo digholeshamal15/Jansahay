@@ -1,0 +1,9 @@
+Keyboard-only skip link, report, typing and Continue passed.
+Accessibility home: no automated WCAG A/AA violations.
+Accessibility review: no automated WCAG A/AA violations.
+Accessibility tracker: no automated WCAG A/AA violations.
+hi: generation, photo validation/upload, retained inputs, edit and save passed
+mr: generation, photo validation/upload, retained inputs, edit and save passed
+Accessibility Marathi mobile: no automated WCAG A/AA violations.
+Other/uncertain path, live search, JSON download and deletion passed.
+Browser smoke passed: guided flow, language retention, facts, copy/download, local save, portal safety, tracker update, lab, 390px layout.

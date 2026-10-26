@@ -1,0 +1,93 @@
+{
+  "sources": [
+    {
+      "repo": "hackermango/Public_Grievance_Dataset",
+      "revision": "0f0eba3851e698758bba892c39bdf308c13472dd",
+      "file": "Public_Grievance_Dataset.csv",
+      "sha256": "a5ef40442cd8beb359cb1b64486023dba05dcd981354e665e975acded7be6577",
+      "upstream_rows": 12500,
+      "selected_rows": 1441,
+      "license": "MIT (declared by publisher)"
+    },
+    {
+      "repo": "JadeSamLee/civicdex",
+      "revision": "b46543ef1e35936ee713faf008d995fc28abbc1e",
+      "file": "civicdex_main.csv",
+      "sha256": "b75934af682fe2275b1147cbdde3bc8b2c3411f685b988ec5ca5a127472f5467",
+      "upstream_rows": 600,
+      "selected_rows": 366,
+      "license": "MIT (declared by publisher)"
+    }
+  ],
+  "scope": "English source data filtered to five civic services; authored Hindi/Marathi supplement only.",
+  "hf_selected_before_dedup": 1807,
+  "hf_unique_after_dedup": 1780,
+  "duplicate_rows_removed": 27,
+  "conflicting_rows_removed": 0,
+  "hf_pattern_groups": 459,
+  "split_seed": 7,
+  "split_method": "GroupShuffleSplit on source complaint cores; >=0.85 character similarity joins near-identical cores; all groups disjoint. Seed chosen for class coverage only.",
+  "authored_supplement": 90,
+  "counts": {
+    "train": {
+      "rows": 1331,
+      "categories": {
+        "roads": 430,
+        "water": 354,
+        "drainage": 182,
+        "garbage": 203,
+        "lights": 162
+      },
+      "languages": {
+        "en": 1271,
+        "hi": 30,
+        "mr": 30
+      },
+      "sources": {
+        "hackermango/Public_Grievance_Dataset": 1017,
+        "JadeSamLee/civicdex": 224,
+        "JanSahay authored": 90
+      }
+    },
+    "validation": {
+      "rows": 159,
+      "categories": {
+        "water": 50,
+        "roads": 41,
+        "drainage": 45,
+        "garbage": 16,
+        "lights": 7
+      },
+      "languages": {
+        "en": 159
+      },
+      "sources": {
+        "hackermango/Public_Grievance_Dataset": 111,
+        "JadeSamLee/civicdex": 48
+      }
+    },
+    "test": {
+      "rows": 380,
+      "categories": {
+        "garbage": 83,
+        "drainage": 60,
+        "water": 109,
+        "roads": 114,
+        "lights": 14
+      },
+      "languages": {
+        "en": 380
+      },
+      "sources": {
+        "hackermango/Public_Grievance_Dataset": 313,
+        "JadeSamLee/civicdex": 67
+      }
+    }
+  },
+  "limitations": [
+    "No native Hindi/Marathi external data found among the selected open sources.",
+    "Source provenance is not evidence of real citizen submissions; Public Grievance appears templated and CivicDex says no real citizen data.",
+    "Exact/core grouping reduces simple leakage but does not establish independence of all semantic paraphrases.",
+    "This is an in-domain prototype benchmark; real Marathi/Hindi and real citizen evaluation is still needed."
+  ]
+}
