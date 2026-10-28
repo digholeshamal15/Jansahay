@@ -37,7 +37,9 @@ def migrate(path):
             if name not in columns:db.execute(f'ALTER TABLE drafts ADD COLUMN {name} {spec}')
         db.execute('CREATE TABLE IF NOT EXISTS history (id INTEGER PRIMARY KEY, draft_id INTEGER NOT NULL REFERENCES drafts(id) ON DELETE CASCADE, action TEXT NOT NULL, old_status TEXT, new_status TEXT, note TEXT NOT NULL DEFAULT "", created TEXT NOT NULL)')
         db.execute('CREATE TABLE IF NOT EXISTS photos (id TEXT PRIMARY KEY, draft_id INTEGER REFERENCES drafts(id) ON DELETE CASCADE, storage_name TEXT NOT NULL, created TEXT NOT NULL)')
-        db.execute('PRAGMA user_version=3')
+        db.execute('CREATE TABLE IF NOT EXISTS documents (id TEXT PRIMARY KEY, title TEXT NOT NULL, text TEXT NOT NULL, category TEXT NOT NULL DEFAULT "other", location TEXT NOT NULL DEFAULT "", lang TEXT NOT NULL DEFAULT "en", source TEXT NOT NULL DEFAULT "", source_type TEXT NOT NULL DEFAULT "manual", created_at TEXT NOT NULL, sha256 TEXT NOT NULL DEFAULT "", metadata_json TEXT NOT NULL DEFAULT "{}")')
+        db.execute('CREATE TABLE IF NOT EXISTS analysis_cache (doc_id TEXT PRIMARY KEY REFERENCES documents(id) ON DELETE CASCADE, analysis_json TEXT NOT NULL, updated TEXT NOT NULL)')
+        db.execute('PRAGMA user_version=4')
     return db
 
 def text_value(data,key,limit=3000,required=False):

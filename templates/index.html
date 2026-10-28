@@ -1,37 +1,863 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#5246b9"><title>JanSahay — Neighbourhood complaint helper</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"><script defer src="{{ url_for('static',filename='assignments.js') }}"></script><script defer src="{{ url_for('static',filename='app.js') }}"></script></head><body><a class="skip-link" href="#main-content" data-i18n="skip_content"></a>
-<svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
-<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol><symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5m5-5-5 5 5 5"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16h14V8zM14 3v5h5M9 12h6m-6 4h6"/></symbol><symbol id="i-water" viewBox="0 0 24 24"><path d="M12 3s-7 8-7 12a7 7 0 0 0 14 0c0-4-7-12-7-12Z"/><path d="M9 15a3 3 0 0 0 3 3"/></symbol><symbol id="i-garbage" viewBox="0 0 24 24"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></symbol><symbol id="i-roads" viewBox="0 0 24 24"><path d="M7 3 3 21M17 3l4 18M12 3v4m0 3v4m0 3v4"/></symbol><symbol id="i-lights" viewBox="0 0 24 24"><path d="M9 18h6m-5 3h4m-5-6c0-2-3-3-3-7a6 6 0 0 1 12 0c0 4-3 5-3 7Z"/></symbol><symbol id="i-drainage" viewBox="0 0 24 24"><path d="M3 8h18M6 4v4m6-4v4m6-4v4M3 13c3-3 6 3 9 0s6 3 9 0M3 19c3-3 6 3 9 0s6 3 9 0"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol><symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol><symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6V4h6l3 3h9v13H3V6Z"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18m0-18c5 5 5 13 0 18"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol><symbol id="i-edit" viewBox="0 0 24 24"><path d="m15 4 5 5M4 20l5-1L21 7l-5-5L4 14Z"/></symbol></defs></svg>
-<header class="header"><div class="header-inner"><a href="/" class="brand"><span class="brand-mark">ज<span></span></span><span>JanSahay<small data-i18n="brand_line"></small></span></a><nav class="main-nav" aria-label="Main navigation"><button data-page="home" class="nav-link active" data-i18n="nav_home"></button><button data-page="saved" class="nav-link"><span data-i18n="nav_saved"></span><span id="saved-count" class="count hidden"></span></button><button data-page="lab" class="nav-link" data-i18n="nav_assignments"></button></nav><div class="language-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><select id="ui-language" aria-label="Language / भाषा"><option value="en">English</option><option value="hi">हिन्दी</option><option value="mr">मराठी</option></select></div></div></header>
-<main id="main-content" tabindex="-1">
-<section id="home-panel" class="page">
-<div id="landing"><section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="dot"></span><span data-i18n="hero_tag"></span></div><h1 data-i18n="hero_title"></h1><p class="hero-intro" data-i18n="hero_intro"></p><button id="begin" class="primary large"><span data-i18n="start"></span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><p class="hero-hint" data-i18n="start_hint"></p></div><div class="hero-visual" aria-hidden="true"><div class="visual-grid"></div><span class="visual-orbit orbit-one"></span><span class="visual-orbit orbit-two"></span><div class="problem-bubble"><span class="service-icon amber"><svg class="icon"><use href="#i-lights"/></svg></span><div><small data-i18n="preview_label"></small><p data-i18n="preview_issue"></p></div></div><div class="preview-sheet"><div class="sheet-top"><span class="mini-mark">ज</span><span data-i18n="preview_tag"></span><span class="sheet-dots">•••</span></div><div class="sheet-subject" data-i18n="preview_subject"></div><p data-i18n="preview_body"></p><div class="paper-lines"><i></i><i></i><i></i></div><div class="paper-location"><svg class="icon"><use href="#i-pin"/></svg><span data-i18n="location_label"></span></div><div class="ready-badge"><span>✓</span><span data-i18n="preview_ready"></span></div></div><p class="visual-caption" data-i18n="preview_end"></p></div></section>
-<section class="how-strip" aria-label="How it works"><div><span class="step-count">01</span><div><h3 data-i18n="one"></h3><p data-i18n="one_desc"></p></div></div><div><span class="step-count">02</span><div><h3 data-i18n="two"></h3><p data-i18n="two_desc"></p></div></div><div><span class="step-count">03</span><div><h3 data-i18n="three"></h3><p data-i18n="three_desc"></p></div></div></section></div>
-<section id="workspace" class="workspace hidden"><div class="workspace-top"><p class="eyebrow" data-i18n="step_label"></p><button id="save-progress" class="text-button" data-i18n="save_draft"></button><button id="back" class="text-button"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg><span data-i18n="back"></span></button></div><ol class="stepper"><li data-step="1"><span class="step-number">1</span><span data-i18n="one"></span></li><li data-step="2"><span class="step-number">2</span><span data-i18n="two"></span></li><li data-step="3"><span class="step-number">3</span><span data-i18n="three"></span></li></ol>
-<section id="describe-panel" class="stage"><div class="stage-heading"><h1 data-i18n="form_title"></h1><p data-i18n="form_intro"></p></div><form id="complaint-form" class="form-card"><label for="issue" data-i18n="issue_label"></label><p class="field-hint" id="issue-hint" data-i18n="issue_hint"></p><textarea id="issue" maxlength="3000" rows="5" required aria-describedby="issue-hint" data-ph="placeholder"></textarea><div class="field-bottom"><span data-i18n="examples"></span><span id="character-count">0 / 3000</span></div><div id="examples" class="example-chips"></div><div class="field-divider"></div><p id="form-error" class="inline-error hidden" role="alert"></p><div class="form-bottom"><p class="private-note"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="privacy_short"></span></p><button id="submit" class="primary" type="submit"><span data-i18n="next"></span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div></form></section>
-<section id="details-panel" class="stage hidden"><div class="stage-heading"><h1 tabindex="-1" id="details-title" data-i18n="details_title"></h1><p data-i18n="details_intro"></p></div><form id="details-form" class="form-card">
-<div id="suggestion-note" class="info-note" role="status"></div><div class="two-col"><div><label for="category" data-i18n="service_label"></label><select id="category"></select></div><div><label for="municipality" data-i18n="municipality"></label><select id="municipality"></select></div></div><p class="field-hint" data-i18n="choose_note"></p>
-<label for="location" data-i18n="location_label"></label><input id="location" maxlength="160" required data-ph="location_placeholder"><details class="optional-details"><summary data-i18n="optional_details"></summary><div class="two-col"><div><label for="landmark" data-i18n="landmark"></label><input id="landmark" maxlength="160"></div><div><label for="duration" data-i18n="duration"></label><input id="duration" maxlength="120" data-ph="duration_ph"></div></div>
-<div id="follow-question"></div><label for="recurring" data-i18n="recurring"></label><select id="recurring"></select><label for="extra" data-i18n="extra"></label><textarea id="extra" rows="2" maxlength="1000"></textarea>
-<div class="upload-area"><label for="photo-input" data-i18n="photos"></label><p class="field-hint" data-i18n="photo_hint"></p><input type="file" id="photo-input" accept="image/jpeg,image/png,image/webp"><div id="photo-list" class="photo-list"></div><p id="photo-status" class="field-hint" role="status"></p><p id="photo-error" class="inline-error hidden" role="alert"></p></div></details><p id="details-error" class="inline-error hidden" role="alert"></p><div class="form-bottom"><p class="private-note" data-i18n="privacy_short"></p><button id="create" type="submit" class="primary" data-i18n="create"></button></div></form></section>
-<section id="ready-panel" class="stage hidden"><div class="stage-heading ready-heading"><div class="success-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></div><h1 tabindex="-1" id="ready-title" data-i18n="draft_ready"></h1><p data-i18n="draft_intro"></p></div><div class="review-overview" id="review-overview"></div><div class="ready-grid"><div><article class="letter-card"><div class="letter-toolbar"><span class="category-tag" id="draft-category"></span><button id="edit-draft" class="text-button"><svg class="icon" aria-hidden="true"><use href="#i-edit"/></svg><span data-i18n="draft_edit"></span></button></div><textarea id="draft" maxlength="12000" readonly aria-label="Complaint text"></textarea><p class="letter-note" data-i18n="original_short"></p></article><div class="draft-actions"><button id="copy" class="primary"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="draft_copy"></span></button><button id="download" class="secondary"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span data-i18n="draft_download"></span></button><button id="save" class="secondary"><svg class="icon" aria-hidden="true"><use href="#i-folder"/></svg><span data-i18n="draft_save"></span></button></div><button id="start-over" class="text-button restart" data-i18n="start_over"></button></div><aside class="next-card"><div id="authority-card"></div><h3 data-i18n="send_title"></h3><ol><li><span>1</span><div><h4 data-i18n="send_one"></h4><p data-i18n="send_one_desc"></p></div></li><li><span>2</span><div><h4 data-i18n="send_two"></h4><p data-i18n="send_two_desc"></p></div></li><li><span>3</span><div><h4 data-i18n="send_three"></h4><p data-i18n="send_three_desc"></p></div></li></ol><p class="submission-note" data-i18n="submission_note"></p></aside></div></section></section></section>
-<section id="saved-panel" class="page hidden"><div class="page-heading"><div><p class="eyebrow" data-i18n="nav_saved"></p><h1 data-i18n="saved_title"></h1><p data-i18n="saved_intro"></p></div><button class="primary" data-start data-i18n="new_complaint"></button></div><div class="dashboard-tools"><label for="search" class="sr-only" data-i18n="search"></label><input id="search" type="search" maxlength="200" data-ph="search_ph"><a class="secondary" id="export-json" href="/api/drafts/export?format=json" data-i18n="export_json"></a><a class="secondary" id="export-csv" href="/api/drafts/export?format=csv" data-i18n="export_csv"></a></div><div id="filters" class="filters" role="group" aria-label="Filter complaints"></div><p class="field-hint" data-i18n="status_help"></p><div id="draft-list" aria-live="polite"></div></section>
-<section id="lab-panel" class="page hidden">
-<button class="text-button" data-page="home"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg><span data-i18n="lab_back"></span></button>
-<div class="page-heading"><div><p class="eyebrow" data-i18n="nav_assignments"></p><h1 data-i18n="assignment_title"></h1><p data-i18n="assignment_intro"></p></div></div>
-<div id="assignment-grid" class="assignment-grid" role="group" aria-label="NLP assignments"></div>
-<section id="assignment-demo" class="assignment-demo" aria-labelledby="assignment-heading">
-<div class="assignment-demo-heading"><span id="assignment-badge" class="category-tag"></span><h2 id="assignment-heading" tabindex="-1"></h2><p id="assignment-purpose"></p></div>
-<div class="assignment-workspace"><aside class="assignment-mapping"><h3 data-i18n="assignment_feature"></h3><p id="assignment-feature"></p><h3 data-i18n="assignment_method"></h3><p id="assignment-method"></p><h3 data-i18n="assignment_limits"></h3><p id="assignment-limits" class="assignment-scope"></p><details><summary data-i18n="assignment_code"></summary><ul id="assignment-files"></ul></details></aside>
-<div class="form-card"><p class="field-hint" data-i18n="assignment_demo_only"></p><form id="lab-form">
-<div id="assignment-text-fields"><label for="lab-text" data-i18n="lab_text"></label><textarea id="lab-text" rows="3" maxlength="3000" data-ph="lab_placeholder"></textarea></div>
-<div id="assignment-html-fields" class="hidden"><label for="lab-html" data-i18n="assignment_html"></label><p class="field-hint" id="lab-html-hint" data-i18n="assignment_html_note"></p><textarea id="lab-html" rows="6" maxlength="20000" aria-describedby="lab-html-hint" spellcheck="false"></textarea></div>
-<div class="two-col"><div><label for="lab-language" data-i18n="lab_lang"></label><select id="lab-language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="mr">मराठी</option></select></div><div id="assignment-ngram-field" class="hidden"><label for="ngram">N-gram</label><select id="ngram"><option value="1">Unigram</option><option value="2" selected>Bigram</option><option value="3">Trigram</option></select></div></div>
-<div id="assignment-location-field" class="hidden"><label for="lab-location" data-i18n="assignment_location"></label><input id="lab-location" maxlength="160"></div>
-<p id="assignment-error" class="inline-error hidden" role="alert"></p><div class="draft-actions"><button id="assignment-run" type="submit" class="primary" data-i18n="assignment_run"></button><button id="assignment-example" type="button" class="secondary" data-i18n="assignment_example"></button><button id="assignment-corpus" type="button" class="secondary hidden" data-i18n="assignment_corpus"></button></div></form>
-<div id="assignment-cli" class="assignment-cli hidden"><h3 data-i18n="assignment_cli"></h3><pre id="assignment-command"></pre><p class="field-hint" data-i18n="assignment_cli_note"></p></div>
-<div id="assignment-project-links" class="draft-actions hidden"><button type="button" class="secondary" data-page="home" data-i18n="assignment_open_workflow"></button><button type="button" class="secondary" data-page="saved" data-i18n="nav_saved"></button></div></div></div>
-<div class="assignment-result-heading"><h2 data-i18n="assignment_result"></h2><p id="assignment-result-label" class="field-hint"></p></div><p class="field-hint" data-i18n="assignment_last_input"></p><div id="assignment-output" aria-live="polite"></div>
-</section>
-<details class="inspector-tools"><summary data-i18n="assignment_full"></summary><p class="field-hint" data-i18n="assignment_all_methods"></p><div class="draft-actions"><button id="inspect-all" type="button" class="secondary" data-i18n="assignment_full"></button><button id="topics" type="button" class="secondary" data-i18n="topics"></button></div><div id="lab-output" class="lab-output" aria-live="polite"></div></details>
-</section>
-</main><footer><div class="footer-inner"><span class="footer-brand">JanSahay<span class="footer-dot">·</span><span data-i18n="footer_note"></span></span><div><button class="text-button" id="about" data-i18n="footer_about"></button><button class="text-button" data-page="lab" data-i18n="footer_lab"></button></div></div></footer><div id="toast" class="toast hidden" role="status"></div><dialog id="dialog"><h2 id="dialog-title"></h2><div id="dialog-body"></div><div class="dialog-actions"><button id="dialog-cancel" class="secondary"></button><button id="dialog-confirm" class="primary"></button></div></dialog></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#5246b9">
+  <title>JanSahay · EchoTrace AI — Integrated Public NLP Intelligence Platform</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+  <script defer src="{{ url_for('static',filename='assignments.js') }}"></script>
+  <script defer src="{{ url_for('static',filename='app.js') }}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5m5-5-5 5 5 5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16h14V8zM14 3v5h5M9 12h6m-6 4h6"/></symbol>
+      <symbol id="i-water" viewBox="0 0 24 24"><path d="M12 3s-7 8-7 12a7 7 0 0 0 14 0c0-4-7-12-7-12Z"/><path d="M9 15a3 3 0 0 0 3 3"/></symbol>
+      <symbol id="i-garbage" viewBox="0 0 24 24"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></symbol>
+      <symbol id="i-roads" viewBox="0 0 24 24"><path d="M7 3 3 21M17 3l4 18M12 3v4m0 3v4m0 3v4"/></symbol>
+      <symbol id="i-lights" viewBox="0 0 24 24"><path d="M9 18h6m-5 3h4m-5-6c0-2-3-3-3-7a6 6 0 0 1 12 0c0 4-3 5-3 7Z"/></symbol>
+      <symbol id="i-drainage" viewBox="0 0 24 24"><path d="M3 8h18M6 4v4m6-4v4m6-4v4M3 13c3-3 6 3 9 0s6 3 9 0M3 19c3-3 6 3 9 0s6 3 9 0"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6V4h6l3 3h9v13H3V6Z"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18m0-18c5 5 5 13 0 18"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+      <symbol id="i-edit" viewBox="0 0 24 24"><path d="m15 4 5 5M4 20l5-1L21 7l-5-5L4 14Z"/></symbol>
+      <symbol id="i-hub" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></symbol>
+      <symbol id="i-graph" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="brand">
+        <span class="brand-mark">ज<span></span></span>
+        <span>JanSahay <span class="brand-platform-badge">EchoTrace AI</span><small>Integrated Public NLP Intelligence Platform</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button data-page="hub" class="nav-link active">Intelligence Hub</button>
+        <button data-page="docs" class="nav-link">Documents</button>
+        <button data-page="graph" class="nav-link">EchoTrace Graph</button>
+        <button data-page="opinion" class="nav-link">Public Opinion</button>
+        <button data-page="lab" class="nav-link">NLP Methods</button>
+        <button data-page="home" class="nav-link">File Issue</button>
+        <button data-page="saved" class="nav-link">Tracker <span id="saved-count" class="count hidden">0</span></button>
+      </nav>
+      <div class="language-wrap">
+        <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
+        <select id="ui-language" aria-label="Language / भाषा">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ========================================================================= -->
+    <!-- 1. INTELLIGENCE HUB (OVERVIEW DASHBOARD)                                   -->
+    <!-- ========================================================================= -->
+    <section id="hub-panel" class="page">
+      <div class="intel-hero">
+        <div>
+          <div class="eyebrow"><span class="dot"></span>ECHOTRACE AI · CIVIC RISK & NARRATIVE ENGINE</div>
+          <h1>Public Infrastructure & Incident Intelligence</h1>
+          <p>Integrated NLP pipeline analyzing citizen grievances, disaster incident reports, news coverage, and public opinion with verifiable textual evidence.</p>
+        </div>
+        <div class="intel-actions">
+          <button id="hub-btn-new-doc" class="primary"><svg class="icon"><use href="#i-file"/></svg><span>Add Document</span></button>
+          <button id="hub-btn-import" class="secondary"><svg class="icon"><use href="#i-download"/></svg><span>Import Dataset</span></button>
+        </div>
+      </div>
+
+      <!-- KPI Executive Metrics -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">Analyzed Records</div>
+          <div class="kpi-value" id="kpi-total-docs">—</div>
+          <div class="kpi-sub">Citizen reports & news articles</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Dominant Domain</div>
+          <div class="kpi-value" id="kpi-top-category" style="font-size:22px;padding-top:6px">—</div>
+          <div class="kpi-sub" id="kpi-top-cat-sub">Most reported infrastructure area</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Negative Feedback</div>
+          <div class="kpi-value" id="kpi-negative-ratio">—</div>
+          <div class="kpi-sub">Adverse public sentiment</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Inferred Hazards</div>
+          <div class="kpi-value" id="kpi-risk-count" style="color:#d9483b">—</div>
+          <div class="kpi-sub">Operational risks detected</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Unsupervised Topics</div>
+          <div class="kpi-value" id="kpi-topic-count" style="color:var(--purple)">5</div>
+          <div class="kpi-sub">LDA latent thematic clusters</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Flagged Divergences</div>
+          <div class="kpi-value" id="kpi-contra-count" style="color:#cf651f">—</div>
+          <div class="kpi-sub">Candidate contradictions</div>
+        </div>
+      </div>
+
+      <!-- Category Breakdown & Sentiment -->
+      <div class="intel-two-col">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>9-Category Issue Distribution</h3>
+            <span class="category-tag">Trained Model</span>
+          </div>
+          <div id="hub-category-bars" class="cat-bars"></div>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Public Sentiment & Emotion Polarity</h3>
+            <span class="category-tag">Lexicon & Context</span>
+          </div>
+          <div id="hub-sentiment-summary" style="margin-bottom:18px"></div>
+          <h4 style="font-size:12px;text-transform:uppercase;color:var(--muted);margin-bottom:10px">Prominent Emotional Tones</h4>
+          <div id="hub-emotions-list" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+        </div>
+      </div>
+
+      <!-- Locations & Emerging N-grams -->
+      <div class="intel-two-col">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Reported Geographic Hotspots</h3>
+            <span class="category-tag">NER & Gazetteer</span>
+          </div>
+          <div id="hub-locations-list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px"></div>
+        </div>
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Emerging Multi-Word Phrases (N-grams)</h3>
+            <span class="category-tag">Bigrams & Trigrams</span>
+          </div>
+          <div id="hub-ngrams-list" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+        </div>
+      </div>
+
+      <!-- Model Performance & Academic Evaluation Card -->
+      <div class="intel-card" style="margin-bottom:40px">
+        <div class="intel-card-header">
+          <div>
+            <h3>Academic Model Evaluation & Classifier Metrics</h3>
+            <p style="font-size:12px;color:var(--muted);margin:3px 0 0">Multilingual Character TF-IDF (3-5 grams) + Stratified Logistic Regression Evaluated on Holdout Set</p>
+          </div>
+          <button id="btn-toggle-cm" class="secondary" style="font-size:12px;padding:6px 12px;min-height:36px">Toggle Confusion Matrix</button>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:16px">
+          <div style="background:#f9f8fc;padding:14px;border-radius:10px;border:1px solid #ebe6f5">
+            <small style="color:var(--muted);font-size:11px;font-weight:600">TEST ACCURACY</small>
+            <div style="font-size:24px;font-weight:750;color:#28744b" id="eval-accuracy">96.3%</div>
+          </div>
+          <div style="background:#f9f8fc;padding:14px;border-radius:10px;border:1px solid #ebe6f5">
+            <small style="color:var(--muted);font-size:11px;font-weight:600">WEIGHTED F1-SCORE</small>
+            <div style="font-size:24px;font-weight:750;color:var(--purple)" id="eval-weighted-f1">0.958</div>
+          </div>
+          <div style="background:#f9f8fc;padding:14px;border-radius:10px;border:1px solid #ebe6f5">
+            <small style="color:var(--muted);font-size:11px;font-weight:600">MACRO AVG F1</small>
+            <div style="font-size:24px;font-weight:750;color:#494565" id="eval-macro-f1">0.606</div>
+          </div>
+          <div style="background:#f9f8fc;padding:14px;border-radius:10px;border:1px solid #ebe6f5">
+            <small style="color:var(--muted);font-size:11px;font-weight:600">HOLDOUT TEST SIZE</small>
+            <div style="font-size:24px;font-weight:750;color:#35384e" id="eval-test-samples">270 rows</div>
+          </div>
+        </div>
+        <div id="eval-cm-container" class="hidden" style="margin-top:20px;overflow-x:auto"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 2. DOCUMENT INTELLIGENCE EXPLORER                                         -->
+    <!-- ========================================================================= -->
+    <section id="docs-panel" class="page hidden">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">DOCUMENT INTELLIGENCE REPOSITORY</p>
+          <h1>Public Grievances, News & Incident Reports</h1>
+          <p>Search, filter, and inspect ingested reports with end-to-end NLP evidence and deduplication.</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button id="btn-open-ingest" class="primary"><svg class="icon"><use href="#i-file"/></svg><span>Ingest Document</span></button>
+          <button id="btn-import-dataset-2" class="secondary"><svg class="icon"><use href="#i-download"/></svg><span>Import Dataset</span></button>
+        </div>
+      </div>
+
+      <!-- Filter / Search Toolbar -->
+      <div class="docs-toolbar">
+        <input id="docs-search-input" type="search" placeholder="Search text, headline, or location…">
+        <select id="docs-category-filter">
+          <option value="all">All Categories</option>
+        </select>
+        <select id="docs-sentiment-filter">
+          <option value="all">All Sentiments</option>
+          <option value="negative">Negative</option>
+          <option value="positive">Positive</option>
+          <option value="neutral">Neutral</option>
+          <option value="mixed">Mixed</option>
+        </select>
+        <select id="docs-lang-filter">
+          <option value="all">All Languages</option>
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+
+      <!-- Document Cards Grid -->
+      <div id="docs-grid" class="docs-grid"></div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. ECHOTRACE NARRATIVE & CONTRADICTIONS                                   -->
+    <!-- ========================================================================= -->
+    <section id="graph-panel" class="page hidden">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">ECHOTRACE AI · NARRATIVE GRAPH & CONTRADICTIONS</p>
+          <h1>Multi-Entity Connection Graph</h1>
+          <p>Visualize latent thematic connections, shared geographic loci, and detect candidate conflicting claims across independent sources.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Narrative Graph Canvas -->
+      <div class="graph-container">
+        <canvas id="narrative-canvas"></canvas>
+        <div class="graph-overlay">
+          <h4 style="margin:0 0 6px;font-size:13px">EchoTrace Graph Legend</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px">
+            <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#5246b9;margin-right:5px"></span>Documents</div>
+            <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#d97706;margin-right:5px"></span>Locations</div>
+            <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#059669;margin-right:5px"></span>Categories</div>
+            <div><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#dc2626;margin-right:5px"></span>Entities</div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin:8px 0 0">Click and drag nodes to explore. Click any node to inspect relationship details.</p>
+        </div>
+        <div id="graph-node-details" class="graph-node-inspector hidden"></div>
+      </div>
+
+      <!-- Candidate Contradictions -->
+      <div class="intel-card" style="margin-bottom:40px">
+        <div class="intel-card-header">
+          <div>
+            <h3>Candidate Contradictions & Divergences</h3>
+            <p style="font-size:12px;color:var(--muted);margin:3px 0 0">Flagged conflicting operational reports in the same location/domain (e.g. resolution claims vs persistent outages).</p>
+          </div>
+        </div>
+        <div id="contradictions-list" class="contra-list"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. PUBLIC OPINION & RISK ANALYTICS                                        -->
+    <!-- ========================================================================= -->
+    <section id="opinion-panel" class="page hidden">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">OPINION MINING & RISK DISCOVERY</p>
+          <h1>Public Opinion & Operational Risks</h1>
+          <p>Target entity stance extraction, emotional tone classification, and inferred real-world risk synthesis.</p>
+        </div>
+      </div>
+
+      <!-- Opinion Mining Table -->
+      <div class="intel-card" style="margin-bottom:30px">
+        <div class="intel-card-header">
+          <h3>Mined Opinions (Target Entity · Stance · Evidence)</h3>
+        </div>
+        <div style="overflow-x:auto">
+          <table class="opinion-table">
+            <thead>
+              <tr>
+                <th>Target Issue</th>
+                <th>Expressed Stance</th>
+                <th>Sentiment & Emotion</th>
+                <th>Exact Evidence Sentence</th>
+                <th>Source Report</th>
+              </tr>
+            </thead>
+            <tbody id="opinion-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Topic-wise Sentiment Breakdown -->
+      <div class="intel-card" style="margin-bottom:40px">
+        <div class="intel-card-header">
+          <h3>Sentiment by Discovered LDA Topic</h3>
+        </div>
+        <div id="opinion-topic-matrix" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px"></div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. NLP METHODS & EXPLAINABILITY LAB (SYLLABUS VIVA LAB)                   -->
+    <!-- ========================================================================= -->
+    <section id="lab-panel" class="page hidden">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">ACADEMIC NLP METHODS & EXPLAINABILITY</p>
+          <h1>NLP Syllabus Lab & Deep Inspector</h1>
+          <p>Inspect every syllabus algorithm on any selected document or custom text with transparent inputs, outputs, and formulas.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Input Card -->
+      <div class="form-card" style="margin-bottom:28px">
+        <label for="lab-unified-text">Text to Inspect</label>
+        <textarea id="lab-unified-text" rows="4" maxlength="4000" placeholder="Enter an incident report, citizen complaint, or news excerpt…">Heavy rainfall caused severe waterlogging near the main bus stand in Pune on Monday. Residents reported damaged roads and delayed emergency vehicles. The municipal authorities have not responded to repeated complaints.</textarea>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px">
+          <button type="button" class="example-chip" id="lab-sample-1"><span>Pune Flood & Roads</span></button>
+          <button type="button" class="example-chip" id="lab-sample-2"><span>Water Contamination</span></button>
+          <button type="button" class="example-chip" id="lab-sample-3"><span>Streetlight & Hazard</span></button>
+          <button type="button" class="example-chip" id="lab-sample-4"><span>हिन्दी कचरा शिकायत</span></button>
+          <button type="button" class="example-chip" id="lab-sample-5"><span>मराठी रस्ता खड्डे</span></button>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <label for="lab-select-lang">Analysis Language</label>
+            <select id="lab-select-lang">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी</option>
+              <option value="mr">मराठी</option>
+            </select>
+          </div>
+          <div>
+            <label for="lab-select-ngram">N-gram Order for Sequence Probability</label>
+            <select id="lab-select-ngram">
+              <option value="1">Unigram (n = 1)</option>
+              <option value="2" selected>Bigram (n = 2)</option>
+              <option value="3">Trigram (n = 3)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-bottom">
+          <p class="private-note">Processes text locally via genuine Python NLP algorithms.</p>
+          <button id="btn-run-lab" class="primary"><svg class="icon"><use href="#i-sparkles"/></svg><span>Run Full NLP Inspection</span></button>
+        </div>
+      </div>
+
+      <!-- 8-Tab Syllabus Navigation -->
+      <div class="methods-nav">
+        <button class="methods-tab-btn active" data-tab="tab-preproc">1. Preprocessing & Counts</button>
+        <button class="methods-tab-btn" data-tab="tab-morph">2. Stemming vs Lemmatization</button>
+        <button class="methods-tab-btn" data-tab="tab-pos-ner">3. POS & NER</button>
+        <button class="methods-tab-btn" data-tab="tab-embed-tfidf">4. TF-IDF & Word Embeddings</button>
+        <button class="methods-tab-btn" data-tab="tab-clf">5. 9-Class Classifier</button>
+        <button class="methods-tab-btn" data-tab="tab-ngram-prob">6. N-grams & Sequence Prob</button>
+        <button class="methods-tab-btn" data-tab="tab-topics">7. LSI & LDA Topics</button>
+        <button class="methods-tab-btn" data-tab="tab-opinion">8. Sentiment & Opinions</button>
+      </div>
+
+      <!-- Tab 1: Preprocessing & Counts -->
+      <div id="tab-preproc" class="methods-panel active">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Module B: Text Statistics, Tokenization & Cleaning</h3>
+          </div>
+          <div id="lab-stats-grid" class="kpi-grid" style="margin-bottom:20px"></div>
+          <div class="side-by-side">
+            <div class="side-box">
+              <h4>Original Input Text</h4>
+              <p id="lab-orig-text"></p>
+            </div>
+            <div class="side-box">
+              <h4>Cleaned Processed Text (Stop Words Removed)</h4>
+              <p id="lab-clean-text"></p>
+            </div>
+          </div>
+          <h4 style="font-size:13px;margin:18px 0 8px">Word Tokens (<span id="lab-token-count">0</span>)</h4>
+          <div id="lab-tokens-chips" class="assignment-tokens"></div>
+          <h4 style="font-size:13px;margin:18px 0 8px">Identified Stop Words</h4>
+          <div id="lab-stopwords-chips" class="assignment-tokens"></div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Stemming vs Lemmatization -->
+      <div id="tab-morph" class="methods-panel">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Module C: English Stemming vs WordNet Lemmatization</h3>
+          </div>
+          <div id="lab-morph-expl" style="background:#f4f2fb;padding:16px;border-radius:10px;font-size:13px;line-height:1.7;margin-bottom:20px"></div>
+          <h4 style="font-size:13px;margin-bottom:10px">Word Normalization Comparison Table</h4>
+          <div class="assignment-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Original Word</th>
+                  <th>Porter Stem</th>
+                  <th>WordNet Lemma</th>
+                  <th>POS Context</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="lab-morph-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: POS & NER -->
+      <div id="tab-pos-ner" class="methods-panel">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Module D & E: Part-of-Speech Tagging & Named Entity Recognition</h3>
+          </div>
+          <div class="intel-two-col">
+            <div>
+              <h4 style="font-size:13px;margin-bottom:10px">Part-of-Speech Distribution</h4>
+              <div id="lab-pos-summary"></div>
+            </div>
+            <div>
+              <h4 style="font-size:13px;margin-bottom:10px">Named Entities Extracted</h4>
+              <div id="lab-ner-summary"></div>
+            </div>
+          </div>
+          <h4 style="font-size:13px;margin:20px 0 10px">Entity Tags in Context</h4>
+          <div id="lab-ner-highlighted" style="background:#faf9fc;padding:18px;border-radius:10px;border:1px solid #e2dfec;line-height:2"></div>
+        </div>
+      </div>
+
+      <!-- Tab 4: TF-IDF & Word Embeddings -->
+      <div id="tab-embed-tfidf" class="methods-panel">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Module D & F: TF-IDF Features & 24D PPMI-SVD Word Embeddings</h3>
+          </div>
+          <div class="intel-two-col">
+            <div>
+              <h4 style="font-size:13px;margin-bottom:10px">Top TF-IDF Features in Document</h4>
+              <div id="lab-tfidf-table" class="assignment-table-wrap"></div>
+            </div>
+            <div>
+              <h4 style="font-size:13px;margin-bottom:10px">Dense Word Embeddings (24D PPMI-SVD)</h4>
+              <div id="lab-embeddings-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 5: 9-Class Classifier -->
+      <div id="tab-clf" class="methods-panel">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Module D: 9-Category Public Issue Classifier</h3>
+          </div>
+          <div id="lab-clf-prediction" style="margin-bottom:20px"></div>
+          <div class="intel-two-col">
+            <div>
+              <h4 style="font-size:13px;margin-bottom:10px">Class Probability Ranking</h4>
+              <div id="lab-clf-ranking"></div>
+            </div>
+            <div>
+              <h4 style="font-size:13px;margin-bottom:10px">Top Contributing N-gram Features</h4>
+              <div id="lab-clf-features"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 6: N-grams & Sequence Prob -->
+      <div id="tab-ngram-prob" class="methods-panel">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Module G & H: Laplace-Smoothed Sequence Probability & Perplexity</h3>
+          </div>
+          <div id="lab-prob-kpis" class="kpi-grid" style="margin-bottom:20px"></div>
+          <h4 style="font-size:13px;margin-bottom:10px">Step-by-Step Conditional Probability Calculation: P(w | h)</h4>
+          <div class="assignment-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Step</th>
+                  <th>Context (h)</th>
+                  <th>Token (w)</th>
+                  <th>P(w | h)</th>
+                  <th>ln P(w | h)</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="lab-prob-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 7: LSI & LDA Topics -->
+      <div id="tab-topics" class="methods-panel">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Module I: LSI (TruncatedSVD) vs LDA (Latent Dirichlet Allocation)</h3>
+          </div>
+          <div class="intel-two-col">
+            <div>
+              <h4 style="font-size:13px;margin-bottom:10px">Latent Semantic Indexing (LSI) Components</h4>
+              <div id="lab-lsi-box"></div>
+            </div>
+            <div>
+              <h4 style="font-size:13px;margin-bottom:10px">Latent Dirichlet Allocation (LDA) Topics</h4>
+              <div id="lab-lda-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 8: Sentiment & Opinions -->
+      <div id="tab-opinion" class="methods-panel">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <h3>Module J: Sentiment, Emotion Cues & Mined Opinions</h3>
+          </div>
+          <div id="lab-sentiment-details" style="margin-bottom:20px"></div>
+          <h4 style="font-size:13px;margin-bottom:10px">Mined Target Opinions & Evidence Sentences</h4>
+          <div id="lab-mined-opinions"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. CITIZEN COMPLAINT ASSISTANT (PRESERVED WORKFLOW)                       -->
+    <!-- ========================================================================= -->
+    <section id="home-panel" class="page hidden">
+      <div id="landing">
+        <section class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="dot"></span><span>NEIGHBOURHOOD CITIZEN HELPER</span></div>
+            <h1>A local problem.<br>A clear complaint.</h1>
+            <p class="hero-intro">Water not coming? Potholes? Broken lights? Turn your problem into an official, editable complaint draft, then keep your local follow-up record.</p>
+            <button id="begin" class="primary large"><span>Report a problem</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+            <p class="hero-hint">No account required · Processed on this machine</p>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-grid"></div>
+            <span class="visual-orbit orbit-one"></span>
+            <span class="visual-orbit orbit-two"></span>
+            <div class="problem-bubble">
+              <span class="service-icon amber"><svg class="icon"><use href="#i-lights"/></svg></span>
+              <div>
+                <small>Citizen Report</small>
+                <p>“The streetlight in our lane has been off for three days.”</p>
+              </div>
+            </div>
+            <div class="preview-sheet">
+              <div class="sheet-top"><span class="mini-mark">ज</span><span>FORMAL DRAFT</span><span class="sheet-dots">•••</span></div>
+              <div class="sheet-subject">Request to repair a streetlight</div>
+              <p>Please inspect the streetlight near our building and arrange the necessary repair.</p>
+              <div class="paper-lines"><i></i><i></i><i></i></div>
+              <div class="paper-location"><svg class="icon"><use href="#i-pin"/></svg><span>Pune, Maharashtra</span></div>
+              <div class="ready-badge"><span>✓</span><span>Ready for review</span></div>
+            </div>
+            <p class="visual-caption">Structured complaint letter with municipal routing</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- 3-Step Workspace -->
+      <section id="workspace" class="workspace hidden">
+        <div class="workspace-top">
+          <p class="eyebrow">YOUR COMPLAINT</p>
+          <button id="save-progress" class="text-button">Save draft</button>
+          <button id="back" class="text-button"><svg class="icon"><use href="#i-back"/></svg><span>Back</span></button>
+        </div>
+        <ol class="stepper">
+          <li data-step="1"><span class="step-number">1</span><span>Describe the issue</span></li>
+          <li data-step="2"><span class="step-number">2</span><span>Location & details</span></li>
+          <li data-step="3"><span class="step-number">3</span><span>Review & prepare</span></li>
+        </ol>
+
+        <!-- Stage 1: Describe -->
+        <section id="describe-panel" class="stage">
+          <div class="stage-heading">
+            <h1>What’s happening in your area?</h1>
+            <p>Write naturally in English, हिन्दी or मराठी. One issue at a time works best.</p>
+          </div>
+          <form id="complaint-form" class="form-card">
+            <label for="issue">Describe the problem</label>
+            <p class="field-hint" id="issue-hint">What happened? How long has it been happening?</p>
+            <textarea id="issue" maxlength="3000" rows="5" required placeholder="e.g. The streetlight near our building has been off for three days."></textarea>
+            <div class="field-bottom">
+              <span>Try an example:</span>
+              <span id="character-count">0 / 3000</span>
+            </div>
+            <div id="examples" class="example-chips"></div>
+            <div class="field-divider"></div>
+            <p id="form-error" class="inline-error hidden" role="alert"></p>
+            <div class="form-bottom">
+              <p class="private-note"><svg class="icon"><use href="#i-lock"/></svg><span>Processed locally. A draft is stored only when you choose.</span></p>
+              <button id="submit" class="primary" type="submit"><span>Continue</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Stage 2: Details -->
+        <section id="details-panel" class="stage hidden">
+          <div class="stage-heading">
+            <h1 tabindex="-1" id="details-title">Where is it happening?</h1>
+            <p>Confirm the service and add what you know. Extra details are optional.</p>
+          </div>
+          <form id="details-form" class="form-card">
+            <div id="suggestion-note" class="info-note" role="status"></div>
+            <div class="two-col">
+              <div>
+                <label for="category">Service category</label>
+                <select id="category"></select>
+              </div>
+              <div>
+                <label for="municipality">Local authority / municipality</label>
+                <select id="municipality"></select>
+              </div>
+            </div>
+            <label for="location">Location or landmark</label>
+            <input id="location" maxlength="160" required placeholder="e.g. Near Hadapsar bus stop, Pune">
+            
+            <details class="optional-details">
+              <summary>Add helpful details or photos (optional)</summary>
+              <div class="two-col">
+                <div>
+                  <label for="landmark">Nearby landmark</label>
+                  <input id="landmark" maxlength="160">
+                </div>
+                <div>
+                  <label for="duration">Issue duration</label>
+                  <input id="duration" maxlength="120" placeholder="e.g. Since Monday / 3 days">
+                </div>
+              </div>
+              <div id="follow-question"></div>
+              <label for="recurring">Does this happen repeatedly?</label>
+              <select id="recurring"></select>
+              <label for="extra">Additional details</label>
+              <textarea id="extra" rows="2" maxlength="1000"></textarea>
+
+              <div class="upload-area">
+                <label for="photo-input">Supporting photos (optional)</label>
+                <p class="field-hint">Up to 3 JPG, PNG or WebP photos, 5 MB each.</p>
+                <input type="file" id="photo-input" accept="image/jpeg,image/png,image/webp">
+                <div id="photo-list" class="photo-list"></div>
+                <p id="photo-status" class="field-hint" role="status"></p>
+                <p id="photo-error" class="inline-error hidden" role="alert"></p>
+              </div>
+            </details>
+            <p id="details-error" class="inline-error hidden" role="alert"></p>
+            <div class="form-bottom">
+              <p class="private-note">Your text remains local.</p>
+              <button id="create" type="submit" class="primary">Create my complaint</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Stage 3: Ready Draft -->
+        <section id="ready-panel" class="stage hidden">
+          <div class="stage-heading ready-heading">
+            <div class="success-icon"><svg class="icon"><use href="#i-check"/></svg></div>
+            <h1 tabindex="-1" id="ready-title">Review your complaint</h1>
+            <p>Read it once, make changes if needed, then copy or submit to your authority.</p>
+          </div>
+          <div class="review-overview" id="review-overview"></div>
+          <div class="ready-grid">
+            <div>
+              <article class="letter-card">
+                <div class="letter-toolbar">
+                  <span class="category-tag" id="draft-category"></span>
+                  <button id="edit-draft" class="text-button"><svg class="icon"><use href="#i-edit"/></svg><span>Edit complaint</span></button>
+                </div>
+                <textarea id="draft" maxlength="12000" readonly aria-label="Complaint text"></textarea>
+                <p class="letter-note">Your original text is preserved faithfully.</p>
+              </article>
+              <div class="draft-actions">
+                <button id="copy" class="primary"><svg class="icon"><use href="#i-copy"/></svg><span>Copy text</span></button>
+                <button id="download" class="secondary"><svg class="icon"><use href="#i-download"/></svg><span>Download .txt</span></button>
+                <button id="save" class="secondary"><svg class="icon"><use href="#i-folder"/></svg><span>Save to My complaints</span></button>
+              </div>
+              <button id="start-over" class="text-button restart">Prepare another complaint</button>
+            </div>
+            <aside class="next-card">
+              <div id="authority-card"></div>
+              <h3>What do I do next?</h3>
+              <ol>
+                <li><span>1</span><div><h4>Submit through the official channel</h4><p>Paste into the municipal portal or submit in person.</p></div></li>
+                <li><span>2</span><div><h4>Record your acknowledgement reference</h4><p>Save your ticket number in My Tracker.</p></div></li>
+                <li><span>3</span><div><h4>Keep track locally</h4><p>Update progress as action is taken.</p></div></li>
+              </ol>
+            </aside>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. LOCAL COMPLAINT TRACKER (PRESERVED)                                   -->
+    <!-- ========================================================================= -->
+    <section id="saved-panel" class="page hidden">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">LOCAL FOLLOW-UP TRACKER</p>
+          <h1>Your Saved Complaints</h1>
+          <p>Track your local drafts, official reference numbers, and follow-up status.</p>
+        </div>
+        <button class="primary" data-start>New Complaint</button>
+      </div>
+      <div class="dashboard-tools">
+        <input id="search" type="search" placeholder="Search text, location or reference…">
+        <a class="secondary" id="export-json" href="/api/drafts/export?format=json">Export JSON</a>
+        <a class="secondary" id="export-csv" href="/api/drafts/export?format=csv">Export CSV</a>
+      </div>
+      <div id="filters" class="filters" role="group" aria-label="Filter complaints"></div>
+      <div id="draft-list" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- MODALS: INGESTION, DATASET IMPORT, AND DEEP DOCUMENT DETAIL               -->
+  <!-- ========================================================================= -->
+
+  <!-- Modal 1: Document Ingestion -->
+  <div id="modal-ingest" class="modal-overlay hidden">
+    <div class="modal-window">
+      <div class="modal-head">
+        <h2>Ingest Incident Report or News Article</h2>
+        <button class="modal-close" data-close-modal="modal-ingest">&times;</button>
+      </div>
+      <div class="modal-content">
+        <div style="display:flex;gap:8px;margin-bottom:18px">
+          <button id="ingest-tab-manual" class="secondary" style="background:#5246b9;color:#fff;border-color:#5246b9">Manual Text</button>
+          <button id="ingest-tab-upload" class="secondary">File Upload (CSV/TXT)</button>
+          <button id="ingest-tab-scrape" class="secondary">Web Scraper</button>
+        </div>
+
+        <!-- Ingest Mode A: Manual -->
+        <form id="form-ingest-manual">
+          <label for="ingest-title">Headline / Title</label>
+          <input id="ingest-title" placeholder="e.g. Waterlogging near Pune Bus Stand">
+          <label for="ingest-text">Body Content</label>
+          <textarea id="ingest-text" rows="5" required placeholder="Paste full article or complaint text…"></textarea>
+          <div class="two-col">
+            <div>
+              <label for="ingest-location">Location (optional)</label>
+              <input id="ingest-location" placeholder="e.g. Pune, Hadapsar">
+            </div>
+            <div>
+              <label for="ingest-category">Category (optional)</label>
+              <select id="ingest-category">
+                <option value="auto">Auto-Classify (Model)</option>
+              </select>
+            </div>
+          </div>
+          <p id="ingest-error" class="inline-error hidden"></p>
+          <div class="modal-foot">
+            <button type="button" class="secondary" data-close-modal="modal-ingest">Cancel</button>
+            <button type="submit" class="primary">Ingest & Run Pipeline</button>
+          </div>
+        </form>
+
+        <!-- Ingest Mode B: File Upload -->
+        <form id="form-ingest-upload" class="hidden">
+          <label for="ingest-file-input">Select CSV or TXT File</label>
+          <p class="field-hint">Supports CSV files with columns (text, title, category, location) or plain text TXT files.</p>
+          <input type="file" id="ingest-file-input" accept=".csv,.txt" required>
+          <p id="upload-error" class="inline-error hidden"></p>
+          <div class="modal-foot">
+            <button type="button" class="secondary" data-close-modal="modal-ingest">Cancel</button>
+            <button type="submit" class="primary">Upload & Parse</button>
+          </div>
+        </form>
+
+        <!-- Ingest Mode C: Web Scraper -->
+        <form id="form-ingest-scrape" class="hidden">
+          <label for="ingest-scrape-url">Public HTTPS Web Page URL</label>
+          <p class="field-hint">Respects robots.txt, extracts readable article body, and attributes source metadata.</p>
+          <input type="url" id="ingest-scrape-url" placeholder="https://example.com/civic-report" required>
+          <p id="scrape-error" class="inline-error hidden"></p>
+          <div class="modal-foot">
+            <button type="button" class="secondary" data-close-modal="modal-ingest">Cancel</button>
+            <button type="submit" class="primary">Scrape & Ingest</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Dataset Import -->
+  <div id="modal-dataset" class="modal-overlay hidden">
+    <div class="modal-window" style="max-width:540px">
+      <div class="modal-head">
+        <h2>Import Structured Dataset</h2>
+        <button class="modal-close" data-close-modal="modal-dataset">&times;</button>
+      </div>
+      <div class="modal-content">
+        <p style="font-size:14px;color:var(--muted);line-height:1.7">Load curated records into the intelligence repository to demonstrate multi-document analysis, topic discovery, and narrative linking.</p>
+        <div style="display:grid;gap:12px;margin:20px 0">
+          <div style="border:1px solid #dfd8ee;padding:16px;border-radius:12px;cursor:pointer;background:#faf9fd" id="opt-import-civic">
+            <h4 style="margin:0 0 6px">JanSahay Bundled Civic Grievance Dataset</h4>
+            <p style="font-size:12px;color:var(--muted);margin:0">1,331 verified infrastructure grievances across English, Hindi, and Marathi.</p>
+          </div>
+          <div style="border:1px solid #dfd8ee;padding:16px;border-radius:12px;cursor:pointer;background:#faf9fd" id="opt-import-huffpost">
+            <h4 style="margin:0 0 6px">HuffPost News Category Sample</h4>
+            <p style="font-size:12px;color:var(--muted);margin:0">Public news articles covering environmental deluges, public health, grid failures, and infrastructure.</p>
+          </div>
+        </div>
+        <div class="modal-foot">
+          <button type="button" class="secondary" data-close-modal="modal-dataset">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Document Deep NLP Intelligence Drawer -->
+  <div id="modal-doc-detail" class="modal-overlay hidden">
+    <div class="modal-window" style="max-width:920px">
+      <div class="modal-head">
+        <h2 id="doc-modal-title">Document Intelligence Report</h2>
+        <button class="modal-close" data-close-modal="modal-doc-detail">&times;</button>
+      </div>
+      <div class="modal-content" id="doc-modal-body"></div>
+      <div class="modal-foot">
+        <button id="doc-modal-open-lab" class="secondary"><svg class="icon"><use href="#i-sparkles"/></svg><span>Inspect in NLP Methods Lab</span></button>
+        <button type="button" class="primary" data-close-modal="modal-doc-detail">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast & Dialog -->
+  <div id="toast" class="toast hidden" role="status"></div>
+  <dialog id="dialog">
+    <h2 id="dialog-title"></h2>
+    <div id="dialog-body"></div>
+    <div class="dialog-actions">
+      <button id="dialog-cancel" class="secondary">Cancel</button>
+      <button id="dialog-confirm" class="primary">Confirm</button>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-brand">JanSahay · EchoTrace AI<span class="footer-dot">·</span><span>Integrated Public NLP Intelligence Platform</span></span>
+      <div>
+        <button class="text-button" data-page="hub">Intelligence Hub</button>
+        <button class="text-button" data-page="docs">Documents</button>
+        <button class="text-button" data-page="lab">NLP Syllabus Lab</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

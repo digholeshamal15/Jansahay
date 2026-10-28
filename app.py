@@ -17,15 +17,35 @@ from workflow import (AUTHORITIES, AUTHORITY_MAP, STATUSES, OTHER, QUESTIONS, DE
 from nlp import Engine, language_hint, sentiment
 from assignment_lab import CATALOG, run_assignment
 
+from contextlib import contextmanager
+from engine.pipeline import UnifiedNLPEngine
+from engine.narrative_graph import NarrativeGraphEngine
+from engine.ingestion import (
+    parse_csv_content, parse_txt_content, scrape_web_page,
+    load_bundled_service_dataset, load_huffpost_sample, check_duplicate, calculate_sha256
+)
+from engine.classification import CATEGORIES_9
+
 ROOT=Path(__file__).parent
 app=Flask(__name__)
 app.config.update(MAX_CONTENT_LENGTH=6*1024*1024,DATABASE=str(ROOT/'instance/drafts.sqlite3'),UPLOAD_DIR=str(ROOT/'instance/photos'))
 engine=Engine()
+unified_engine=UnifiedNLPEngine()
 ALL_CATEGORIES={**CATEGORIES,'other':OTHER}
 MAX_PHOTO_BYTES=5*1024*1024
 Image.MAX_IMAGE_PIXELS=16_000_000
 
-def database():return migrate(app.config['DATABASE'])
+@contextmanager
+def database():
+    db = migrate(app.config['DATABASE'])
+    try:
+        yield db
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
+    finally:
+        db.close()
 def payload():
     data=request.get_json(silent=True)
     if not isinstance(data,dict):raise ValueError('JSON object required')
@@ -76,7 +96,7 @@ def too_large(error):return jsonify(error='Upload/request too large. Each photo 
 @app.get('/')
 def index():return render_template('index.html')
 @app.get('/api/config')
-def config():return jsonify(copy=COPY,ui=UI,samples=SAMPLES,categories=ALL_CATEGORIES,names=NAMES,examples=EXAMPLES,questions=QUESTIONS,authorities=AUTHORITIES,statuses=STATUSES)
+def config():return jsonify(copy=COPY,ui=UI,samples=SAMPLES,categories=ALL_CATEGORIES,categories_9=CATEGORIES_9,names=NAMES,examples=EXAMPLES,questions=QUESTIONS,authorities=AUTHORITIES,statuses=STATUSES)
 @app.get('/api/authorities')
 def authorities():return jsonify(AUTHORITIES)
 
@@ -283,6 +303,301 @@ def remove_photo(photo_id):
         if row['draft_id'] is not None:db.execute('INSERT INTO history(draft_id,action,note,created) VALUES(?,?,?,?)',(row['draft_id'],'photo_removed','Supporting photo removed',now()))
     (Path(app.config['UPLOAD_DIR'])/row['storage_name']).unlink(missing_ok=True)
     return jsonify(deleted=True)
+
+def ensure_seed_documents():
+    """Populate initial representative incident reports & news if documents table is empty."""
+    with database() as db:
+        count = db.execute('SELECT COUNT(*) FROM documents').fetchone()[0]
+        if count == 0:
+            seeds = load_huffpost_sample() + load_bundled_service_dataset(limit=16)
+            for item in seeds:
+                doc_id = item.get('id') or uuid4().hex[:12]
+                analysis = unified_engine.analyze_document(item['text'], item.get('lang', 'en'), item.get('category', 'other'))
+                db.execute(
+                    'INSERT OR IGNORE INTO documents(id, title, text, category, location, lang, source, source_type, created_at, sha256, metadata_json) '
+                    'VALUES(?,?,?,?,?,?,?,?,?,?,?)',
+                    (doc_id, item.get('title', item['text'][:50]), item['text'],
+                     analysis['classification']['category'], item.get('location', 'unknown'),
+                     item.get('lang', 'en'), item.get('source', 'Bundled'), item.get('source_type', 'seed'),
+                     item.get('created_at', now()), item.get('sha256', calculate_sha256(item['text'])),
+                     json.dumps(item.get('metadata', {})))
+                )
+                db.execute(
+                    'INSERT OR REPLACE INTO analysis_cache(doc_id, analysis_json, updated) VALUES(?,?,?)',
+                    (doc_id, json.dumps(analysis), now())
+                )
+
+def fetch_stored_documents(db, limit=300):
+    rows = db.execute('SELECT * FROM documents ORDER BY created_at DESC LIMIT ?', (limit,)).fetchall()
+    docs = []
+    for r in rows:
+        d = dict(r)
+        try: d['metadata'] = json.loads(d.get('metadata_json', '{}'))
+        except: d['metadata'] = {}
+        cache_row = db.execute('SELECT analysis_json FROM analysis_cache WHERE doc_id=?', (d['id'],)).fetchone()
+        if cache_row:
+            try:
+                c = json.loads(cache_row['analysis_json'])
+                d['tone'] = c.get('sentiment_analysis', {}).get('tone', 'neutral')
+                d['polarity'] = c.get('sentiment_analysis', {}).get('polarity_score', 0.0)
+                d['entities'] = c.get('entities', {}).get('entities', [])
+                d['confidence'] = c.get('classification', {}).get('confidence', 0.0)
+                d['emerging_risks'] = c.get('emerging_risks', [])
+            except:
+                pass
+        docs.append(d)
+    return docs
+
+@app.get('/api/overview')
+def intelligence_overview():
+    ensure_seed_documents()
+    with database() as db:
+        docs = fetch_stored_documents(db, limit=300)
+    analytics = unified_engine.run_corpus_analytics(docs)
+    analytics['evaluation_metrics'] = unified_engine.classifier.evaluation_metrics
+    return jsonify(analytics)
+
+@app.get('/api/documents')
+def list_documents():
+    ensure_seed_documents()
+    with database() as db:
+        docs = fetch_stored_documents(db, limit=300)
+    q = request.args.get('q', '').strip().lower()
+    cat = request.args.get('category', 'all')
+    tone = request.args.get('sentiment', 'all')
+    lang_filter = request.args.get('lang', 'all')
+    
+    filtered = []
+    for d in docs:
+        if q and (q not in d['text'].lower() and q not in d['title'].lower() and q not in d.get('location', '').lower()):
+            continue
+        if cat != 'all' and d['category'] != cat:
+            continue
+        if tone != 'all' and d.get('tone') != tone:
+            continue
+        if lang_filter != 'all' and d.get('lang') != lang_filter:
+            continue
+        filtered.append(d)
+    return jsonify(filtered)
+
+@app.post('/api/documents')
+def create_document():
+    data = payload()
+    text = text_value(data, 'text', limit=12000, required=True)
+    title = data.get('title', '').strip() or (text[:60] + '...')
+    category = data.get('category', 'auto')
+    location = data.get('location', '').strip() or 'unknown'
+    doc_lang = data.get('lang', 'en')
+    source = data.get('source', '').strip() or 'Manual Entry'
+    
+    with database() as db:
+        existing = fetch_stored_documents(db)
+        dup = check_duplicate(text, existing)
+        doc_id = uuid4().hex[:12]
+        analysis = unified_engine.analyze_document(text, doc_lang, category)
+        final_cat = analysis['classification']['category']
+        
+        db.execute(
+            'INSERT INTO documents(id, title, text, category, location, lang, source, source_type, created_at, sha256, metadata_json) '
+            'VALUES(?,?,?,?,?,?,?,?,?,?,?)',
+            (doc_id, title[:160], text, final_cat, location[:120], doc_lang, source[:120], 'manual_entry', now(), calculate_sha256(text), json.dumps({'is_duplicate': dup['is_duplicate']}))
+        )
+        db.execute(
+            'INSERT OR REPLACE INTO analysis_cache(doc_id, analysis_json, updated) VALUES(?,?,?)',
+            (doc_id, json.dumps(analysis), now())
+        )
+    return jsonify(id=doc_id, title=title, category=final_cat, duplicate_info=dup, analysis=analysis), 201
+
+@app.get('/api/documents/<doc_id>')
+def get_document(doc_id):
+    with database() as db:
+        row = db.execute('SELECT * FROM documents WHERE id=?', (doc_id,)).fetchone()
+        if not row:
+            return jsonify(error='Document not found'), 404
+        doc = dict(row)
+        cache_row = db.execute('SELECT analysis_json FROM analysis_cache WHERE doc_id=?', (doc_id,)).fetchone()
+        if cache_row:
+            try: analysis = json.loads(cache_row['analysis_json'])
+            except: analysis = None
+        else:
+            analysis = None
+        if analysis is None:
+            analysis = unified_engine.analyze_document(doc['text'], doc['lang'], doc['category'])
+            db.execute('INSERT OR REPLACE INTO analysis_cache(doc_id, analysis_json, updated) VALUES(?,?,?)', (doc_id, json.dumps(analysis), now()))
+    return jsonify(document=doc, analysis=analysis)
+
+@app.delete('/api/documents/<doc_id>')
+def delete_document(doc_id):
+    with database() as db:
+        cursor = db.execute('DELETE FROM documents WHERE id=?', (doc_id,))
+        if cursor.rowcount == 0:
+            return jsonify(error='Document not found'), 404
+    return jsonify(deleted=True)
+
+@app.post('/api/documents/upload')
+def upload_document_file():
+    file = request.files.get('file')
+    if file is None or not file.filename:
+        raise ValueError('Please choose a CSV or TXT file to upload')
+    ext = Path(file.filename).suffix.lower()
+    if ext not in ('.csv', '.txt'):
+        raise ValueError('Only .csv and .txt files are supported')
+    content = file.stream.read(4*1024*1024).decode('utf-8', errors='replace')
+    
+    if ext == '.csv':
+        items = parse_csv_content(content)
+    else:
+        items = parse_txt_content(content, filename=file.filename)
+        
+    if not items:
+        raise ValueError('No readable text records found in the uploaded file')
+        
+    imported = 0
+    duplicates = 0
+    with database() as db:
+        existing = fetch_stored_documents(db)
+        for item in items[:40]:
+            dup = check_duplicate(item['text'], existing)
+            if dup['is_duplicate']:
+                duplicates += 1
+                continue
+            doc_id = uuid4().hex[:12]
+            analysis = unified_engine.analyze_document(item['text'], item.get('lang', 'en'), item.get('category', 'auto'))
+            final_cat = analysis['classification']['category']
+            db.execute(
+                'INSERT INTO documents(id, title, text, category, location, lang, source, source_type, created_at, sha256, metadata_json) '
+                'VALUES(?,?,?,?,?,?,?,?,?,?,?)',
+                (doc_id, item.get('title', item['text'][:50]), item['text'], final_cat, item.get('location', 'unknown'),
+                 item.get('lang', 'en'), item.get('source', file.filename), f"file_upload_{ext[1:]}", now(), item['sha256'],
+                 json.dumps(item.get('metadata', {})))
+            )
+            db.execute(
+                'INSERT OR REPLACE INTO analysis_cache(doc_id, analysis_json, updated) VALUES(?,?,?)',
+                (doc_id, json.dumps(analysis), now())
+            )
+            imported += 1
+            existing.append({'id': doc_id, 'text': item['text'], 'sha256': item['sha256']})
+            
+    return jsonify(imported_count=imported, duplicates_skipped=duplicates, total_rows=len(items)), 201
+
+@app.post('/api/documents/scrape')
+def scrape_document():
+    data = payload()
+    url = data.get('url', '').strip()
+    if not url:
+        raise ValueError('URL is required')
+    item = scrape_web_page(url)
+    with database() as db:
+        existing = fetch_stored_documents(db)
+        dup = check_duplicate(item['text'], existing)
+        doc_id = uuid4().hex[:12]
+        analysis = unified_engine.analyze_document(item['text'], item.get('lang', 'en'), 'auto')
+        final_cat = analysis['classification']['category']
+        db.execute(
+            'INSERT INTO documents(id, title, text, category, location, lang, source, source_type, created_at, sha256, metadata_json) '
+            'VALUES(?,?,?,?,?,?,?,?,?,?,?)',
+            (doc_id, item['title'], item['text'], final_cat, item['location'], item['lang'], url, 'web_scrape', now(), item['sha256'],
+             json.dumps({'url': url, 'is_duplicate': dup['is_duplicate']}))
+        )
+        db.execute(
+            'INSERT OR REPLACE INTO analysis_cache(doc_id, analysis_json, updated) VALUES(?,?,?)',
+            (doc_id, json.dumps(analysis), now())
+        )
+    return jsonify(id=doc_id, title=item['title'], category=final_cat, is_duplicate=dup['is_duplicate'], analysis=analysis), 201
+
+@app.post('/api/documents/import-dataset')
+def import_dataset():
+    data = payload()
+    dataset_name = data.get('dataset', 'civic')
+    limit = int(data.get('limit', 20))
+    limit = max(1, min(limit, 50))
+    
+    if dataset_name == 'huffpost':
+        items = load_huffpost_sample()
+    elif dataset_name == 'civic':
+        items = load_bundled_service_dataset(limit=limit)
+    else:
+        raise ValueError("Invalid dataset. Choose 'civic' or 'huffpost'.")
+        
+    imported = 0
+    with database() as db:
+        existing = fetch_stored_documents(db)
+        for item in items:
+            dup = check_duplicate(item['text'], existing)
+            if dup['is_duplicate']:
+                continue
+            doc_id = item.get('id') or uuid4().hex[:12]
+            analysis = unified_engine.analyze_document(item['text'], item.get('lang', 'en'), item.get('category', 'auto'))
+            final_cat = analysis['classification']['category']
+            db.execute(
+                'INSERT OR IGNORE INTO documents(id, title, text, category, location, lang, source, source_type, created_at, sha256, metadata_json) '
+                'VALUES(?,?,?,?,?,?,?,?,?,?,?)',
+                (doc_id, item.get('title', item['text'][:50]), item['text'], final_cat, item.get('location', 'unknown'),
+                 item.get('lang', 'en'), item.get('source', dataset_name), f"dataset_{dataset_name}", now(), item['sha256'],
+                 json.dumps(item.get('metadata', {})))
+            )
+            db.execute(
+                'INSERT OR REPLACE INTO analysis_cache(doc_id, analysis_json, updated) VALUES(?,?,?)',
+                (doc_id, json.dumps(analysis), now())
+            )
+            imported += 1
+            existing.append({'id': doc_id, 'text': item['text'], 'sha256': item['sha256']})
+            
+    return jsonify(imported_count=imported, dataset=dataset_name), 201
+
+@app.get('/api/narrative-graph')
+def narrative_graph():
+    ensure_seed_documents()
+    with database() as db:
+        docs = fetch_stored_documents(db)
+    graph = NarrativeGraphEngine(docs).build_graph()
+    return jsonify(graph)
+
+@app.get('/api/contradictions')
+def contradictions():
+    ensure_seed_documents()
+    with database() as db:
+        docs = fetch_stored_documents(db)
+    items = NarrativeGraphEngine(docs).detect_contradictions()
+    return jsonify(items)
+
+@app.get('/api/opinions')
+def opinions():
+    ensure_seed_documents()
+    all_opinions = []
+    with database() as db:
+        docs = fetch_stored_documents(db)
+        for d in docs:
+            cache_row = db.execute('SELECT analysis_json FROM analysis_cache WHERE doc_id=?', (d['id'],)).fetchone()
+            if cache_row:
+                try:
+                    c = json.loads(cache_row['analysis_json'])
+                    ops = c.get('sentiment_analysis', {}).get('opinions_mined', [])
+                    for o in ops:
+                        all_opinions.append({
+                            **o,
+                            'document_id': d['id'],
+                            'document_title': d['title'],
+                            'location': d.get('location', 'unknown'),
+                            'source': d.get('source', '')
+                        })
+                except Exception:
+                    pass
+    return jsonify(all_opinions)
+
+@app.post('/api/nlp-explain')
+def nlp_explain():
+    data = payload()
+    text = text_value(data, 'text', limit=12000, required=True)
+    lang = choice(data, 'lang', COPY, 'en')
+    n = data.get('n', 2)
+    if type(n) is not int or n not in (1, 2, 3):
+        raise ValueError('n must be 1, 2, or 3')
+        
+    analysis = unified_engine.analyze_document(text, declared_lang=lang, manual_category='auto')
+    model = unified_engine.ngram_models.get((lang, n), unified_engine.ngram_models.get(('en', n)))
+    analysis['sequence_probability'] = model.score_sequence(text) if model else {}
+    return jsonify(analysis)
 
 if __name__=='__main__':
     port=int(os.environ.get('JANSAHAY_PORT','5000'))

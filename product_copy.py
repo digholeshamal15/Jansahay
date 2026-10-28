@@ -68,7 +68,13 @@ LABELS = {
 'choose_note':('Other / Not sure creates a general complaint without pretending to know the responsible service.','अन्य / निश्चित नहीं चुनने पर विभाग का अनुमान लगाए बिना सामान्य शिकायत बनेगी।','इतर / खात्री नाही निवडल्यास विभागाचा अंदाज न लावता सर्वसाधारण तक्रार तयार होईल.'),
 'photo_count':('Supporting photos','समस्या की तस्वीरें','समस्येचे फोटो'),
 'storage_title':('What stays on this computer?','इस कंप्यूटर पर क्या सहेजा जाता है?','या संगणकावर काय साठवले जाते?'),
-'storage_body':('Saved complaints, details, notes and photos stay in the local instance folder. Interface language is saved in this browser. Official sites may have their own account and privacy requirements. JanSahay does not transfer your text or photos automatically.','शिकायतें, विवरण, नोट और तस्वीरें स्थानीय instance फ़ोल्डर में रहते हैं। इंटरफेस की भाषा ब्राउज़र में सहेजी जाती है। आधिकारिक साइट की अपनी खाता और गोपनीयता शर्तें हो सकती हैं। JanSahay मजकूर या तस्वीरें अपने आप नहीं भेजता।','तक्रारी, तपशील, नोंदी आणि फोटो स्थानिक instance फोल्डरमध्ये राहतात. इंटरफेसची भाषा ब्राउझरमध्ये जतन होते. अधिकृत साइटच्या स्वतःच्या खाते आणि गोपनीयता अटी असू शकतात. JanSahay मजकूर किंवा फोटो आपोआप पाठवत नाही.')
+'storage_body':('Saved complaints, details, notes and photos stay in the local instance folder. Interface language is saved in this browser. Official sites may have their own account and privacy requirements. JanSahay does not transfer your text or photos automatically.','शिकायतें, विवरण, नोट और तस्वीरें स्थानीय instance फ़ोल्डर में रहते हैं। इंटरफेस की भाषा ब्राउज़र में सहेजी जाती है। आधिकारिक साइट की अपनी खाता और गोपनीयता शर्तें हो सकती हैं। JanSahay मजकूर या तस्वीरें अपने आप नहीं भेजता।','तक्रारी, तपशील, नोंदी आणि फोटो स्थानिक instance फोल्डरमध्ये राहतात. इंटरफेसची भाषा ब्राउझरमध्ये जतन होते. अधिकृत साइटच्या स्वतःच्या खाते आणि गोपनीयता अटी असू शकतात. JanSahay मजकूर किंवा फोटो आपोआप पाठवत नाही.'),
+'nav_hub':('Intelligence Hub','इंटेलिजेंस हब','इंटेलिजन्स हब'),
+'nav_docs':('Document Explorer','दस्तावेज़ अन्वेषक','कागदपत्रे / अहवाल'),
+'nav_graph':('EchoTrace Graph','नेरेटिव व विरोधाभास','नेरेटिव्ह व विसंगती'),
+'nav_opinion':('Public Opinion & Risk','जनमत और जोखिम','जनमत आणि जोखीम'),
+'nav_methods':('NLP Methods Lab','NLP मेथड्स लैब','NLP पद्धती लॅब'),
+'nav_complaint':('Report an Issue','समस्या बताएँ','समस्या सांगा')
 }
 for key,values in LABELS.items():
     for lang,value in zip(('en','hi','mr'),values):UI[lang][key]=value
